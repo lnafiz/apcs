@@ -9,4 +9,8 @@ public class Greet {
   }
 }
 
+//Strangely enough, running the original program without any of today's changes doesn't work.
+//I think it was because the class didn't match the file.
+//
+
 // NOT FINISHED
