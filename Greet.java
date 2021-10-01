@@ -1,6 +1,6 @@
 // Nafiz Labib
 // APCS
-//HW 07 - Hello Class 
+// HW 07 - Hello Class 
 // 2021-09-30
 
 public class Greet {
