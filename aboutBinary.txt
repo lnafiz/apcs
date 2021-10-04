@@ -1,4 +1,12 @@
-. "Base" refers to the number of unique digits available to represent numbers. For example, in binary, or "base-2", 
+Phase 0: Nafiz, Jacob, Ariella
+APCS 
+HW 03 - Codify the Revisions
+2021-09-23  
+
+
+
+
+0. "Base" refers to the number of unique digits available to represent numbers. For example, in binary, or "base-2", 
     there are 2 available digits: 0 and 1.
 1. Binary is a base-2 number system (using digits 0 and 1) that is used to represent numbers through sums of powers of 2 
     (see 2). Binary is important because it's the most basic "language" of computers. It's the simplest number system 
