@@ -6,7 +6,7 @@
 public class Greet {
   public static void main (String [] args){
     System.out.println("No hablo queso");
-  } 
+  }
 }
 
 //Strangely enough, running the original program without any of today's changes doesn't work.
