@@ -10,9 +10,9 @@ public class Greet {
       }
 
       public static void main(String[] args){
-          greet("Bob");
-          greet("Tom");
-          greet("Sally");
+          greet("Foo");
+          greet("Moo");
+          greet("Boo");
       }
 
   }
