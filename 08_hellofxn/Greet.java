@@ -4,10 +4,18 @@
 // 2021-10-01
 
 public class Greet {
-  public static void main (String [] args){
-    System.out.println("No hablo queso");
+
+      public static void greet(String name){
+       System.out.println("Why, hello there, " + name + ", how do you do?");
+      }
+
+      public static void main(String[] args){
+          greet("Bob");
+          greet("Tom");
+          greet("Sally");
+      }
+
   }
-}
 
 //Strangely enough, running the original program without any of today's changes doesn't work.
 //I think it was because the class didn't match the file.
@@ -15,4 +23,5 @@ public class Greet {
 //In a different file, I get an error with "Exception in thread "main" java.lang.Error: Unresolved compilation problem:" 
 //Might be due to the platform I'm trying to test this on (Eclipse).
 
-// NOT FINISHED
+//Everything was fixed with some git pulling, code runs perfectly well now. Also, I used Git Bash instead, for simplicity.
+
