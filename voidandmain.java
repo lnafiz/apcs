@@ -7,11 +7,11 @@
       public static void main(String[] args){
           String s;
        char String = "Bob";
-          printHello();
+          printHello(String);
        char String = "Tom";
-          printHello();
+          printHello(String);
        char String = "Sally";
-          printHello();
+          printHello(String);
       }
 
   }
