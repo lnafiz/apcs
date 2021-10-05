@@ -5,7 +5,7 @@
       }
 
       public static void main(String[] args){
-          printHello();
+          printHello("Bob");
       }
 
   }
