@@ -1,6 +1,6 @@
  public class voidandmain {
 
-      public static void printHello(String){
+      public static void printHello(String);{
           System.out.println("Why, hello there, how do you do?");
       }
 
