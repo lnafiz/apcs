@@ -3,8 +3,6 @@
 
 
 
-
-
 public class Greet {
 
       public static void greet(String name){
@@ -12,9 +10,9 @@ public class Greet {
       }
 
       public static void main(String[] args){
-          greet("Foo");
-          greet("Moo");
-          greet("Boo");
+          BigSib.greet("Foo");
+          BigSib.greet("Moo");
+          BigSib.greet("Boo");
       }
 
   }
