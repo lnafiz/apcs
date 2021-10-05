@@ -1,7 +1,7 @@
 // Phase 0: Nafiz (Martha), Jacob (Jacob Jr.), Ariella (Tom)
 // APCS
-// HW 09 - What Are Big Sibs Good For?
-// 2021-10-03
+// HW 10 - Refactor Big Sib One
+// 2021-10-05
 
 public class BigSib { 
       
