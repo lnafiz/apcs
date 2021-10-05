@@ -6,12 +6,9 @@
 
       public static void main(String[] args){
           String s;
-       char String = "Bob";
-          printHello(String);
-       char String = "Tom";
-          printHello(String);
-       char String = "Sally";
-          printHello(String);
+          printHello(Bob);
+          printHello(Tom);
+          printHello(Sally);
       }
 
   }
