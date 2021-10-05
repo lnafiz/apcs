@@ -5,9 +5,9 @@
       }
 
       public static void main(String[] args){
-          printHello(Bob);
-          printHello(Tom);
-          printHello(Sally);
+          printHello("Bob");
+          printHello("Tom");
+          printHello("Sally");
       }
 
   }
