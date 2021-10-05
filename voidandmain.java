@@ -1,12 +1,12 @@
  public class voidandmain {
 
       public static void printHello(String){
-       char String = "Bob";   
-       System.out.println("Why, hello there, String, how do you do?");
-       char String = "Tom";   
-       System.out.println("Why, hello there, String, how do you do?");
-       char String = "Sally";   
-       System.out.println("Why, hello there, String, how do you do?");
+       String name = "Bob";   
+       System.out.println("Why, hello there, name, how do you do?");
+       String name = "Tom";   
+       System.out.println("Why, hello there, name, how do you do?");
+       String name = "Sally";   
+       System.out.println("Why, hello there, name, how do you do?");
       }
 
       public static void main(String[] args){
