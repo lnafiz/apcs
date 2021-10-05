@@ -6,9 +6,9 @@
 
       public static void main(String[] args){
           String s;
-          printHello(Bob);
-          printHello(Tom);
-          printHello(Sally);
+          printHello();
+          printHello();
+          printHello();
       }
 
   }
