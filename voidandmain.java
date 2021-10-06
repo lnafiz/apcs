@@ -1,13 +1,24 @@
- public class voidandmain {
+public class Greet {
+  public static void main( String[] args ) {
+    String greeting;
 
-      public static void printHello(String name){
-       System.out.println("Why, hello there, " + name + ", how do you do?");
-      }
+    BigSib richard = new BigSib();
+    
+    richard.setHelloMsg("Word up");
+    greeting = richard.greet("freshman");
+    System.out.println(greeting);
+    
+    richard.setHelloMsg("Salutations");
+    greeting = richard.greet("Dr. Spaceman");
+    System.out.println(greeting);
+    
+    richard.setHelloMsg("Hey ya");
+    greeting = richard.greet("Kong Fooey");
+    System.out.println(greeting);
+    
+    richard.setHelloMsg("Sup");
+    greeting = richard.greet("mom");
+    System.out.println(greeting);
 
-      public static void main(String[] args){
-          printHello("Bob");
-          printHello("Tom");
-          printHello("Sally");
-      }
-
-  }
+  } //end main()
+} //end Greet
