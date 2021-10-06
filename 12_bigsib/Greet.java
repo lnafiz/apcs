@@ -1,6 +1,6 @@
 // Anthony Sun + Corn, Nafiz Labib + Martha
 // APCS
-// HW12 - On Elder Individuality and the Elimination of Radio Fuzz
+// HW 12 - On Elder Individuality and the Elimination of Radio Fuzz
 // 2021-10-05
  
 // DISCOVERIES:
