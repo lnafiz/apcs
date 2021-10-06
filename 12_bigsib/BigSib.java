@@ -1,7 +1,11 @@
 public class BigSib { 
+      String helloMsg;
       
-      public static String greet(String name){
-      String hello = "Why, hello there, " + name + ", how do you do?";
-            return hello;
+      public void sethelloMsg(String msg){
+            helloMsg = msg
              }
+     
+      public String greet(String msg) {
+		return helloMsg + " " + msg;
+      }
 }
