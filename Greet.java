@@ -1,5 +1,5 @@
 public class Greet {
-  public static void main( String[] args ) {
+  public void main( String[] args ) {
     
     String greeting;
     BigSib richard = new BigSib();
