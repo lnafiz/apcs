@@ -3,7 +3,7 @@ public class BigSib {
 	
 		
 	public BigSib (){
-	richard.setHelloMsg("Word up");	
+		
 	}
 	
 	public void setHelloMsg(String msg) {
