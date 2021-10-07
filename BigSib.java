@@ -9,5 +9,3 @@ public class BigSib {
 		return helloMsg + " " + msg;
 	}
 }
-© 2021 GitHub, Inc.
-Terms
