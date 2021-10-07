@@ -4,7 +4,7 @@ public class Greet {
 
     BigSib richard = new BigSib();
     
- 
+    
     greeting = richard.greet("freshman");
     System.out.println(greeting);
     
