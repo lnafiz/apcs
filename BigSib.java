@@ -1,8 +1,8 @@
 public class BigSib {
 	String helloMsg;
-
+	BigSib richard = new BigSib();
+	
 	public BigSib (){
-		BigSib richard = new BigSib();
 		richard.setHelloMsg("Word up");	
 	}
 	
