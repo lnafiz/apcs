@@ -4,13 +4,13 @@ public class BigSib {
 	public BigSib(){
 		
 	helloMsg = "Word up"; 
-	richard.helloMsg;
+	return richard.helloMsg;
 	helloMsg = "Hey ya"
-	grizz.helloMsg;
+	return grizz.helloMsg;
 	helloMsg = "Sup";
-	dotCom.helloMsg;
+	return dotCom.helloMsg;
 	helloMsg = "Salutations"
-	tracy.helloMsg
+	return tracy.helloMsg
 	}
 	
 	public BigSib(String msg) {
