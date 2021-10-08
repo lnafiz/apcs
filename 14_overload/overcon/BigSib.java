@@ -16,8 +16,11 @@ public class BigSib {
 	public BigSib() {
 		helloMsg = "Word up";
 	BigSib richard = new BigSib(helloMsg);
+		helloMsg = "Hey ya";
 	BigSib grizz = new BigSib(helloMsg);
+		helloMsg = "Sup";
 	BigSib dotCom = new BigSib(helloMsg);
+		helloMsg = "Salutations";
 	BigSib tracy = new BigSib(helloMsg);	
 	}
 	
