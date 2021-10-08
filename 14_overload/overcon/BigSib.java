@@ -14,21 +14,25 @@
 
 public class BigSib {
 	String helloMsg;
+	String richardhelloMsg;
+	String grizzhelloMsg;
+	String dotComhelloMsg;
+	String tracyhelloMsg;
 	
 	public BigSib() {
-	String richardhelloMsg = "Word up";
+	richardhelloMsg = "Word up";
 	BigSib richard = new BigSib(richardhelloMsg);
 
 	
-	String grizzhelloMsg = "Hey ya";
+	grizzhelloMsg = "Hey ya";
 	BigSib grizz = new BigSib(grizzhelloMsg);
 	
 
-	String dotComhelloMsg = "Sup";
+	dotComhelloMsg = "Sup";
 	BigSib dotCom = new BigSib(dotComhelloMsg);
 		
 		
-	String tracyhelloMsg = "Salutations";	
+	tracyhelloMsg = "Salutations";	
 	BigSib tracy = new BigSib(tracyhelloMsg);
 	
 	richardhelloMsg = msg
