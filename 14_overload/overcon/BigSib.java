@@ -20,7 +20,7 @@ public class BigSib {
 	BigSib richard = new BigSib(richardhelloMsg);
 
 	
-	String gerizzhelloMsg = "Hey ya";
+	String grizzhelloMsg = "Hey ya";
 	BigSib grizz = new BigSib(grizzhelloMsg);
 	
 
