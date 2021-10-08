@@ -16,7 +16,7 @@ public class BigSib {
 	String helloMsg;
 	
 	public BigSib() {
-	if BigSib richard	
+		
 		helloMsg = "Word up";
 	BigSib richard = new BigSib(helloMsg);
 		helloMsg = "Hey ya";
