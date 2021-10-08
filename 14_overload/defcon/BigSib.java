@@ -2,10 +2,10 @@ public class BigSib {
 	String helloMsg;
 	
 	public BigSib(){
-	richard.setHelloMsg("Word up");
-	grizz.setHelloMsg("Hey ya");
-	dotCom.setHelloMsg("Sup");
-	tracy.setHelloMsg("Salutations");
+	BigSib richard = BigSib("Word up");
+	BigSib grizz = BigSib("Hey ya");
+	BigSib dotCom = BigSib("Sup");
+	BigSib tracy = BigSib("Salutations");
 	}
 	
 	public BigSib(String msg) {
