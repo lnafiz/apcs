@@ -15,17 +15,17 @@
 public class BigSib {
 	String helloMsg;
 	
-	public BigSib() {
-	if BigSib richard = new BigSib();
+	public richard.BigSib() {
+
 		helloMsg = "Word up";
 	BigSib richard = new BigSib(helloMsg);
-	if BigSib grizz = new BigSib();
+	
 		helloMsg = "Hey ya";
 	BigSib grizz = new BigSib(helloMsg);
-	if BigSib dotCom = new BigSib();
+	
 		helloMsg = "Sup";
 	BigSib dotCom = new BigSib(helloMsg);
-	if BigSib tracy = new BigSib();
+
 		helloMsg = "Salutations";
 	BigSib tracy = new BigSib(helloMsg);	
 	}
