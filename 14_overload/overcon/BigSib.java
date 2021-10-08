@@ -35,11 +35,7 @@ public class BigSib {
 	tracyhelloMsg = "Salutations";	
 	BigSib tracy = new BigSib(tracyhelloMsg);
 	
-	richardhelloMsg = msg
-	grizzhelloMsg = msg
-	dotCom helloMsg = msg
-	tracyhelloMsg = msg
-		
+	
 		
 
 	}
