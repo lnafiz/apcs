@@ -16,20 +16,21 @@ public class BigSib {
 	String helloMsg;
 	
 	public BigSib() {
-	BigSib richard = new BigSib(helloMsg);
-		helloMsg = "Word up";
+	String richardhelloMsg = "Word up";
+	BigSib richard = new BigSib(richardhelloMsg);
+
+	
+	String gerizzhelloMsg = "Hey ya";
+	BigSib grizz = new BigSib(grizzhelloMsg);
 	
 
-	BigSib grizz = new BigSib(helloMsg);
-		helloMsg = "Hey ya";
-
-
-	BigSib dotCom = new BigSib(helloMsg);
-		helloMsg = "Sup";
+	String dotComhelloMsg = "Sup";
+	BigSib dotCom = new BigSib(dotComhelloMsg);
 		
-			
-	BigSib tracy = new BigSib(helloMsg);
-		helloMsg = "Salutations";
+		
+	String tracyhelloMsg = "Salutations";	
+	BigSib tracy = new BigSib(tracyhelloMsg);
+		
 		
 
 	}
