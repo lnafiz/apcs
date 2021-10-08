@@ -2,7 +2,8 @@ public class BigSib {
 	String helloMsg;
 	
 	public BigSib(){
-		super("word up")
+	
+	helloMsg = 
 	}
 	
 	public BigSib(String msg) {
