@@ -2,6 +2,7 @@ public class BigSib {
 	String helloMsg;
 	
 	public BigSib(){
+		helloMsg = msg
 		
 	richard.helloMsg = "Word up";
 	grizz.helloMsg = "Hey ya";
