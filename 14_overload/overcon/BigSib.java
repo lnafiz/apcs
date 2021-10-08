@@ -17,16 +17,16 @@ public class BigSib {
 	
 	public BigSib() {
 	BigSib richard = new BigSib(helloMsg);
-		helloMsg = "Word up";
+		richard.helloMsg = "Word up";
 
 	BigSib grizz = new BigSib(helloMsg);
-		helloMsg = "Hey ya";
+		grizz.helloMsg = "Hey ya";
 
 	BigSib dotCom = new BigSib(helloMsg);
-		helloMsg = "Sup";
+		dotCom.helloMsg = "Sup";
 	
 	BigSib tracy = new BigSib(helloMsg);
-		helloMsg = "Salutations";
+		tracy.helloMsg = "Salutations";
 
 	}
 	
