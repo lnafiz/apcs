@@ -8,19 +8,22 @@
 // - Must specify default to be able to use it.
 
 // QCC:
+// - I'm almost there. I just have to figure out how to have separate helloMsg's for each person because in the end, everyone says "Salutations", because it's the most recent
+// - definition of helloMsg.
 
 
 public class BigSib {
 	String helloMsg;
 	
 	public BigSib() {
-		richard.helloMsg = "Word up";
+	if BigSib richard	
+		helloMsg = "Word up";
 	BigSib richard = new BigSib(helloMsg);
-		grizz.helloMsg = "Hey ya";
+		helloMsg = "Hey ya";
 	BigSib grizz = new BigSib(helloMsg);
-		dotCom.helloMsg = "Sup";
+		helloMsg = "Sup";
 	BigSib dotCom = new BigSib(helloMsg);
-		tracy.helloMsg = "Salutations";
+		helloMsg = "Salutations";
 	BigSib tracy = new BigSib(helloMsg);	
 	}
 	
