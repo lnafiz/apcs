@@ -15,7 +15,7 @@
 public class BigSib {
 	String helloMsg;
 	
-	public richard.BigSib() {
+	public BigSib() {
 
 		helloMsg = "Word up";
 	BigSib richard = new BigSib(helloMsg);
