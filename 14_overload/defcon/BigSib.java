@@ -3,11 +3,15 @@ public class BigSib {
 	
 	public BigSib(){
 		helloMsg = msg
-		
-	richard.helloMsg("Word up");
-	grizz.helloMsg("Hey ya");
-	dotCom.helloMsg("Sup");
-	tracy.helloMsg("Salutations");
+	
+	helloMsg = "Word up"; 
+	richard.helloMsg;
+	helloMsg = "Hey ya"
+	grizz.helloMsg;
+	helloMsg = "Sup";
+	dotCom.helloMsg;
+	helloMsg = "Salutations"
+	tracy.helloMsg
 	}
 	
 	public BigSib(String msg) {
