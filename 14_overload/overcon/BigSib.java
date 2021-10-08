@@ -14,10 +14,10 @@ public class BigSib {
 	String helloMsg;
 	
 	public BigSib() {
-	richard.helloMsg = "Word up";
-	grizz.helloMsg = "Word up";
-	dotCom.helloMsg = "Word up";
-	tracy.helloMsg = "Word up";	
+	BigSib richard.helloMsg = "Word up";
+	BigSib grizz.helloMsg = "Word up";
+	BigSib dotCom.helloMsg = "Word up";
+	BigSib tracy.helloMsg = "Word up";	
 	}
 	
 	public BigSib(String msg) {
