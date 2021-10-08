@@ -4,10 +4,10 @@ public class BigSib {
 	public BigSib(){
 		helloMsg = msg
 		
-	richard.helloMsg = "Word up";
-	grizz.helloMsg = "Hey ya";
-	dotCom.helloMsg = "Sup";
-	tracy.helloMsg = "Salutations";
+	richard.BigSib("Word up");
+	grizz.BigSib("Hey ya");
+	dotCom.BigSib("Sup");
+	tracy.BigSib("Salutations");
 	}
 	
 	public BigSib(String msg) {
