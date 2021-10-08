@@ -2,6 +2,8 @@ public class BigSib {
 	String helloMsg;
 	
 	public BigSib(){
+	String helloMsg
+		
 	richard.helloMsg("Word up");
 	grizz.helloMsg("Hey ya");
 	dotCom.helloMsg("Sup");
