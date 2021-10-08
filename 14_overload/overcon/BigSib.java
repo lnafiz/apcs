@@ -8,16 +8,16 @@
 // - Must specify default to be able to use it.
 
 // QCC:
-// - How do I specify a default???
+
 
 public class BigSib {
 	String helloMsg;
 	
 	public BigSib() {
-	BigSib richard = new BigSib("Word up");
-	BigSib grizz = new BigSib("Word up");
-	BigSib dotCom = new BigSib("Word up");
-	BigSib tracy = new BigSib("Word up");	
+	richard.helloMsg = "Word up";
+	grizz.helloMsg = "Word up";
+	dotCom.helloMsg = "Word up";
+	tracy.helloMsg = "Word up";	
 	}
 	
 	public BigSib(String msg) {
