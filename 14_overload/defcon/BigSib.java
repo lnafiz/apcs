@@ -4,10 +4,10 @@ public class BigSib {
 	public BigSib(){
 		helloMsg = msg;
 		
-	BigSib richard = BigSib("Word up")
-	BigSib grizz = BigSib("Word up")
-	BigSib dotCom = BigSib("Word up")
-	BigSib tracy = BigSib("Word up")
+	BigSib richard = new BigSib("Word up")
+	BigSib grizz = new BigSib("Word up")
+	BigSib dotCom = new BigSib("Word up")
+	BigSib tracy = new BigSib("Word up")
 	
 	}
 	
