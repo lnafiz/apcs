@@ -41,7 +41,7 @@ public class BankAccount{
     		accPass = newPasswd;
   }
 
-  public int setPin( short newPin ) {
+  public int setPin( int newPin ) {
     		PIN = newPin;
   }
 
