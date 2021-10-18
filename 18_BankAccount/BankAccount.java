@@ -1,3 +1,15 @@
+// Nafiz Labib, Jing Yi Feng, Jomin Zhang - Heroes of the Zeroes
+// APCS
+// HW 18 - CPA-One
+// 2021-10-17
+
+// DISCO -
+
+// QCC - 
+
+// Q2 Response - 
+// Q3 Response - 
+
 public class BankAccount{
 	String name;
 	String accPass;
@@ -26,10 +38,16 @@ public class BankAccount{
 		System.out.println("New balance: " + balance);
 	}
 	
+	public void Withdraw(double withdraw){
+		balance = balance - withdraw;
+		System.out.println("New balance: " + balance);
+	}
+	
 	public static void main (String [] args){
 	BankAccount Jomin = new BankAccount();
 	Jomin.ShowInfo();
 	Jomin.Deposit(1000.01);
+	Jomin.Withdraw(500.01);
 	//System.out.println(name);
 	//BankAccount.ShowInfo();
 	}
