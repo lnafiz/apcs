@@ -4,8 +4,11 @@
 // 2021-10-17
 
 // DISCO -
+// - Skeleton used short retun type for PIN instead of PIN. 
+// - When doing double's calculations, there are a lot of unnecessary digits apearing in the cents part, with a 1 at the end. 
 
 // QCC - 
+// - Using the actual return types for set<variable> gives me errors of return type needed, but when I used void instead, it worked. why?
 
 // Q2 Response - 
 // Q3 Response - 
@@ -35,22 +38,27 @@ public class BankAccount{
 	
 	public void setName( String newName ) {
     		name = newName;
+		System.out.println("New name: " + newName);
   }
 
   public void setPasswd( String newPasswd ) {
     		accPass = newPasswd;
+	  	System.out.println("New password: " + newPasswd);
   }
 
   public void setPin( int newPin ) {
     		PIN = newPin;
+	  	System.out.println("New PIN: " + PIN);
   }
 
   public void setAcctNum( int newAcctNum ) {
     		accNum = newAcctNum;
+	  	System.out.println("New account number: " + newAcctNum);
   }
 
   public void setBalance( double newBalance ) {
   		balance = newBalance;
+	  	System.out.println("New Balance: " + newBalance);
   }	  
 	public void Deposit(double deposit){
 		balance = balance + deposit;
@@ -72,7 +80,6 @@ public class BankAccount{
 	Jomin.setPin(9876);
 	Jomin.setAcctNum(987654321);
 	Jomin.setBalance(5000);
-	Jomin.ShowInfo();
 	}
 	
 }
