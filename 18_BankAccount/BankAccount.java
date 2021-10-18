@@ -35,12 +35,12 @@ public class BankAccount{
 	
 	public void Deposit(double deposit){
 		balance = balance + deposit;
-		System.out.println("New balance: " + balance);
+		System.out.println("New balance after deposit: " + balance);
 	}
 	
 	public void Withdraw(double withdraw){
 		balance = balance - withdraw;
-		System.out.println("New balance: " + balance);
+		System.out.println("New balance after withdrawal: " + balance);
 	}
 	
 	public static void main (String [] args){
