@@ -48,8 +48,6 @@ public class BankAccount{
 	Jomin.ShowInfo();
 	Jomin.Deposit(1000.01);
 	Jomin.Withdraw(500.01);
-	//System.out.println(name);
-	//BankAccount.ShowInfo();
 	}
 	
 }
