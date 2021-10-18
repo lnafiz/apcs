@@ -72,6 +72,7 @@ public class BankAccount{
 	Jomin.setPin(9876);
 	Jomin.setAcctNum(987654321);
 	Jomin.setBalance(5000);
+	Jomin.ShowInfo();
 	}
 	
 }
