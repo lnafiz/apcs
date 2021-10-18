@@ -33,6 +33,25 @@ public class BankAccount{
 	System.out.println("Balance: " + balance);
 	}
 	
+	public String setName( String newName ) {
+    		name = newName
+  }
+
+  public String setPasswd( String newPasswd ) {
+    		accPass = newPasswd
+  }
+
+  public int setPin( short newPin ) {
+    		PIN - newPin
+  }
+
+  public int setAcctNum( int newAcctNum ) {
+    		accNum = newAcctNum
+  }
+
+  public double setBalance( double newBalance ) {
+  		balance = newBalance 
+  }	  
 	public void Deposit(double deposit){
 		balance = balance + deposit;
 		System.out.println("New balance after deposit: " + balance);
@@ -48,6 +67,11 @@ public class BankAccount{
 	Jomin.ShowInfo();
 	Jomin.Deposit(1000.01);
 	Jomin.Withdraw(500.01);
+	Jomin.setName("Jomin Zhang");
+	Jomin.setPasswd("jominzhang");
+	Jomin.setPin(9876);
+	Jomin.setAcctNum(987654321);
+	Jomin.setBalance(5000);
 	}
 	
 }
