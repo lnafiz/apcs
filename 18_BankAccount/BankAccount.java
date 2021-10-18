@@ -42,7 +42,7 @@ public class BankAccount{
   }
 
   public int setPin( short newPin ) {
-    		PIN - newPin;
+    		PIN = newPin;
   }
 
   public int setAcctNum( int newAcctNum ) {
