@@ -33,23 +33,23 @@ public class BankAccount{
 	System.out.println("Balance: " + balance);
 	}
 	
-	public String setName( String newName ) {
+	public void setName( String newName ) {
     		name = newName;
   }
 
-  public String setPasswd( String newPasswd ) {
+  public void setPasswd( String newPasswd ) {
     		accPass = newPasswd;
   }
 
-  public int setPin( int newPin ) {
+  public void setPin( int newPin ) {
     		PIN = newPin;
   }
 
-  public int setAcctNum( int newAcctNum ) {
+  public void setAcctNum( int newAcctNum ) {
     		accNum = newAcctNum;
   }
 
-  public double setBalance( double newBalance ) {
+  public void setBalance( double newBalance ) {
   		balance = newBalance;
   }	  
 	public void Deposit(double deposit){
