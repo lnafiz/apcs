@@ -34,23 +34,23 @@ public class BankAccount{
 	}
 	
 	public String setName( String newName ) {
-    		name = newName
+    		name = newName;
   }
 
   public String setPasswd( String newPasswd ) {
-    		accPass = newPasswd
+    		accPass = newPasswd;
   }
 
   public int setPin( short newPin ) {
-    		PIN - newPin
+    		PIN - newPin;
   }
 
   public int setAcctNum( int newAcctNum ) {
-    		accNum = newAcctNum
+    		accNum = newAcctNum;
   }
 
   public double setBalance( double newBalance ) {
-  		balance = newBalance 
+  		balance = newBalance;
   }	  
 	public void Deposit(double deposit){
 		balance = balance + deposit;
