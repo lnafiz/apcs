@@ -1,3 +1,17 @@
+/* 
+Nafiz Labib, Jing Yi Feng, Jomin Zhang - Heroes of the Zeroes
+APCS
+HW 19 - Mo Money Mo Problems...MORE AWESOME
+2021-10-18
+
+DISCO -
+ - Creating an instance variable with type boolean does not help when trying to return boolean values, because Java tries converting int and String to boolean, which it can't.
+Instead, just return true and false depending on if conditions are met, then print out result by adding ba.authenticate() method in the parentheses.
+
+QCC - 
+ - How compound can if methods be (there's two so far, if and else)?
+ */
+   
 public class BankAccount {
 
   //instance variables
