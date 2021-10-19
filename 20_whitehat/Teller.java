@@ -22,9 +22,10 @@ public class Teller {
 		// Works like expected.
 		hacker.deposit(200);
 		System.out.println(hacker.toString());
+		// Able to deposit money.
 		hacker.withdraw(300);
 		System.out.println(hacker.toString());
-
+		// Able to withdraw money.
 
 		
 	}
