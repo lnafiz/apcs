@@ -53,7 +53,7 @@ public class BankAccount {
   }
 
   public boolean authenticate(int enteredAccNum, String enteredPasswd){
-    if (enteredAccNum = accNum){
+    if (enteredAccNum = acctNum){
     cAcctNum = true;
     return cAcctNum;
     }
