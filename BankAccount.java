@@ -52,23 +52,19 @@ public class BankAccount {
     balance = balance - withdrawAmount;
   }
 
-  public boolean authenticate(int enteredAccNum, String enteredPasswd){
+  public void authenticate(int enteredAccNum, String enteredPasswd){
     if (enteredAccNum = acctNum){
     cAcctNum = true;
-    return cAcctNum;
     }
     else {
     cAcctNum = false;
-    return cAcctNum;
     }
     
     if (enteredPasswd = passwd){
     cPasswd = true;
-    return cPasswd;
     }
     else {
       cPasswd = false;
-    return cPasswd;
     }
     
   }
