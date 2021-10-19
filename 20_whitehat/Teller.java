@@ -20,7 +20,9 @@ public class Teller {
 		// No unique restrictions other than double.
 		System.out.println(hacker.toString());
 		// Works like expected.
-		
+		hacker.deposit(200);
+		System.out.println(hacker.toString());
+
 		
 	}
 }
