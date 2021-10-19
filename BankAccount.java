@@ -6,6 +6,7 @@ public class BankAccount {
   private short pin;
   private int acctNum;
   private double balance;
+  private boolean access;
   //---------------------------------------------
 
 
@@ -50,6 +51,17 @@ public class BankAccount {
     balance = balance - withdrawAmount;
   }
 
+  public boolean authenticate(int enteredAccNum, String enteredPasswd){
+    if (enteredAccNum = accNum, enteredPasswd = passwd){
+    access = true;
+    return access;
+    }
+    else {
+      access = false;
+    return access;
+    }
+    
+  }
 
   //overwritten toString()
   public String toString() {
@@ -59,6 +71,7 @@ public class BankAccount {
     retStr = retStr + "\nPIN: " + pin;
     retStr = retStr + "\nAccount Number: " + acctNum;
     retStr = retStr + "\nBalance: " + balance;
+    retStr = retStr + "\nAccount Login: " + access;
     retStr = retStr + "\n=======================";
     return retStr;
   }
@@ -73,6 +86,8 @@ public static void main( String[] args ) {
     ba.setBalance(10);
     ba.deposit(20.0);
     ba.withdraw(10.0);
+    System.out.println(ba.toString());
+    ba.authenticate(123456789, "bank");
     System.out.println(ba.toString());
 }
     
