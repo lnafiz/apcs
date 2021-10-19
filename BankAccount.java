@@ -81,7 +81,7 @@ public static void main( String[] args ) {
     ba.deposit(20.0);
     ba.withdraw(10.0);
     System.out.println(ba.toString());
-    System.out.println("Account Login: " + ba.authenticate(123456789, "bank"))
+    System.out.println("Account Login: " + ba.authenticate(123456789, "bank"));
     
 }
     
