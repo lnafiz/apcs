@@ -6,7 +6,8 @@ public class BankAccount {
   private short pin;
   private int acctNum;
   private double balance;
-  private boolean access;
+  private boolean cAcctNum;
+  private boolean cPasswd;
   //---------------------------------------------
 
 
@@ -52,13 +53,22 @@ public class BankAccount {
   }
 
   public boolean authenticate(int enteredAccNum, String enteredPasswd){
-    if (enteredAccNum = accNum)(enteredPasswd = passwd){
-    access = true;
-    return access;
+    if (enteredAccNum = accNum){
+    cAcctNum = true;
+    return cAcctNum;
     }
     else {
-      access = false;
-    return access;
+    cAcctNum = false;
+    return cAcctNum;
+    }
+    
+    if (enteredPasswd = passwd){
+    cPasswd = true;
+    return cPasswd;
+    }
+    else {
+      cPasswd = false;
+    return cPasswd;
     }
     
   }
@@ -71,7 +81,8 @@ public class BankAccount {
     retStr = retStr + "\nPIN: " + pin;
     retStr = retStr + "\nAccount Number: " + acctNum;
     retStr = retStr + "\nBalance: " + balance;
-    retStr = retStr + "\nAccount Login: " + access;
+    retStr = retStr + "\nCorrect Account Number: " + cAcctNum;
+    retStr = retStr + "\nCorrect Password: " + cPasswd;
     retStr = retStr + "\n=======================";
     return retStr;
   }
