@@ -38,8 +38,11 @@ public class Teller {
 		System.out.println(hacker.toString());
 		// Able to withdraw money.
 		System.out.println("Account Login: " + hacker.authenticate(111111111, "hacker"));
+		// acctNum false, passwd true: login false
 		System.out.println("Account Login: " + hacker.authenticate(123456789, "hack"));
+		// acctNum true, passwd false: login false
 		System.out.println("Account Login: " + hacker.authenticate(123456789, "hacker"));
+		// acctNum true, passwd true: login true
 		
 		
 
