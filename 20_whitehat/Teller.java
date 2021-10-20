@@ -3,9 +3,10 @@ Nafiz Labib, Jing Yi Feng, Jomin Zhang - Heroes of the Zeroes
 APCS
 HW 20 - External Audit
 2021-10-19
-DISCO -
+
+DISCO - Negative int arguments can be used in deposit/withdraw methods to do opposite function as intended for that method.
  
-QCC -
+QCC - How can we use only number of digits to restrict Pin and acctNum instead of values defined by using a certain number of digits? (Combinations of digits with set numberof digits) 
  
  */
 
