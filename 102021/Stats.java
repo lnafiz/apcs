@@ -1,4 +1,4 @@
-**
+/*
    Clyde "Thluffy" Sinclair
    APCS
    HW20 --
@@ -7,7 +7,7 @@
    Implement each method without typecasting.
    xtra: harmonic mean is the reciprocal of the
    arithmetic mean of the reciprocals
- **/
+ */
 
 public class Stats {
 
