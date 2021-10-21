@@ -83,28 +83,17 @@ public class Stats {
      }
      return max; 
  }
-   /*
-  public static int max(int a, int b, int c) {
-
-  }
-
-  public static double max(double a, double b, double c) {
-
-  }
 
   public static int geoMean(int a, int b, int c) {
-
+      double geoMean = Math.cbrt(a*b*c);
+      return (int) geoMean;
+  //IMPORTANT: LOOK AT DISCO
+  //IMPORTANT: LOOK AT DISCO
   }
 
   public static double geoMean(double a, double b, double c) {
-
+      double geoMean = Math.cbrt(a*b*c);
+      return geoMean;
   }
-
-
-  //main method for testing functionality
-  public static void main( String[] args ) {
-
-  }
-*/
 }//end class
 
