@@ -51,7 +51,7 @@ public class Stats {
 */
    
   public static double geoMean(double a, double b) {
-     double geoMean = Math.pow(a*b,1/2);
+     double geoMean = Math.pow(a*b,(1/2));
      return geoMean;
 
   }
