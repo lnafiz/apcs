@@ -42,12 +42,13 @@ public class Stats {
      return b;
      }
   }
-
+/*
   public static int geoMean(int a, int b) {
      int geoMean = Math.sqrt(a*b);
         return geoMean;
 
   }
+*/
 
   public static double geoMean(double a, double b) {
      double geoMean = Math.sqrt(a*b);
