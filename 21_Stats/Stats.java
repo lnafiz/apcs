@@ -59,13 +59,13 @@ public class Stats {
   public static int max(int a, int b, int c) {
      int max = a;
      if (a >= b && a >= c){
-        int max = a;
+        max = a;
      }
      if (b >= a && b >= c){
-        int max = b;
+        max = b;
      }
      if (c >= a && c >= b){
-        int max = c;
+        max = c;
      }
      return max;
  }
@@ -73,13 +73,13 @@ public class Stats {
   public static double max(double a, double b, double c) {
      double max = a; 
      if (a >= b && a >= c){
-        double max = a;
+        max = a;
      }
      if (b >= a && b >= c){
-        double max = b;
+        max = b;
      }
      if (c >= a && c >= b){
-        double max = c;
+        max = c;
      }
      return max; 
  }
