@@ -42,13 +42,12 @@ public class Stats {
      return b;
      }
   }
-/*
+
   public static int geoMean(int a, int b) {
      int geoMean = Math.pow(a*b,1/2);
         return geoMean;
-  POWER FUNCTION DOES NOT RETURN INTEGERS, ONLY DOUBLES.
   }
-*/
+
    
   public static double geoMean(double a, double b) {
      double geoMean = Math.pow(a*b,0.5);
