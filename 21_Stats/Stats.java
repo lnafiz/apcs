@@ -64,11 +64,11 @@ public class Stats {
      }
      if (b >= a && b >= c){
         int max = b;
-        return b;
+        return max;
      }
      if (c >= a && c >= b){
         int max = c;
-        return c;
+        return max;
      }
   }
 
@@ -79,11 +79,11 @@ public class Stats {
      }
      if (b >= a && b >= c){
         double max = b;
-        return b;
+        return max;
      }
      if (c >= a && c >= b){
         double max = c;
-        return c; 
+        return max; 
      }
   }
    /*
