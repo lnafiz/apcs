@@ -15,7 +15,7 @@ public class StatsDriver{
 	System.out.println(teacher.mean(10,5.0));
 	// returns 7.5
 	System.out.println(teacher.mean(-10,5));
-	// returns -2.5
+	// returns -2
 /*
 	teacher.mean(0);
 	// Should not run
