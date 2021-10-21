@@ -72,15 +72,15 @@ public class StatsDriver{
 	// returns -1.0
 
 	System.out.println(teacher.geoMean(1,2,3));
-	// returns
+	// returns 1
 	System.out.println(teacher.geoMean(1.0,2.0,3.0));
-	// returns
+	// returns approximation of cube root of 6
 	System.out.println(teacher.geoMean(-1,-2,-3));
-	// returns
+	// returns -1
 	System.out.println(teacher.geoMean(0,2,3));
-	// returns
+	// returns 0
 	System.out.println(teacher.geoMean(2.0,2.0,2.0));
-	// returns
+	// returns 2.0
 	
 	}
 }
