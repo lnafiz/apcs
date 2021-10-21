@@ -1,13 +1,14 @@
 /**
-   Clyde "Thluffy" Sinclair
-   APCS
-   HW20 --
-   2021-10-21
-   TASK:
-   Implement each method without typecasting.
-   xtra: harmonic mean is the reciprocal of the
-   arithmetic mean of the reciprocals
- **/
+Nafiz Labib, Jing Yi Feng, Jomin Zhang - Heroes of the Zeroes
+APCS
+HW 21 - STAtisTically Speaking...
+2021-10-20
+DISCO -
+ - When using Math.sqrt and Math.cbrt operations, for the geoMean methods we want to return integers, we have to specify for integers in the return statement. However, the declaration of the variable must start off with double, no matter what.
+QCC -
+ - How compound can if methods be (there's two so far, if and else)?
+**/
+
 
 public class Stats {
 
