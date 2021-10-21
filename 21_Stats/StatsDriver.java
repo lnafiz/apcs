@@ -22,19 +22,19 @@ public class StatsDriver{
 	System.out.println(teacher.mean(0,0,0));
 	// Does not run
 	System.out.println(teacher.mean());
-	// does not run
+	// Does not run
 	THESE DO NOT RUN BECAUSE THESE ARE NOT APPLICABLE TO MEAN METHODS
 */		
 	System.out.println(teacher.max(1,2));
-	// object teacher carries out method max, which compares arguments 1 and 2 and returns the greatest value [1 < 2, 2]. The returned value is an integer.
+	// returns 2
 	System.out.println(teacher.max(1,2));
-	// object teacher carries out method max, which compares arguments 1 and 2 and returns the greatest value [1 < 2, 2]. The returned value is a double.
+	// returns 2
 	System.out.println(teacher.max(0,0));
-	// Should return 0
+	// returns 0
 	System.out.println(teacher.max(10,10.0));
-	// Should return 10.0
+	// returns 10.0
 	System.out.println(teacher.max(-10,0));
-	// Should return 0
+	// returns 0
 /*
 	System.out.println(teacher.max());
 	// Does not run
@@ -42,19 +42,21 @@ public class StatsDriver{
 	// does not run
 	THESE DO NOT RUN BECAUSE THESE ARE NOT APPLICABLE TO MAXIMUM METHODS
 */
+
+	System.out.println(teacher.geoMean(1,2));
+	// returns 1
+	System.out.println(teacher.geoMean(1.0,2.0));
+	// returns approximation square root of 2
+	System.out.println(teacher.geoMean(0,1));
+	// returns 0
+	System.out.println(teacher.geoMean(1,1));
+	// returns 1
+	System.out.println(teacher.geoMean(-2,-3));
+	// returns 2
 /*
-	teacher.geoMean((int) 1,(int) 2);
-	// object teacher carries out method geoMean, which takes the product of arguments 1 and 2 and raises it to the 1/nth power (in this case, n = 2). The returned value is an integer.
-	teacher.geoMean((double) 1,(double) 2);
-	// object teacher carries out method geoMean, which takes the product of arguments 1 and 2 and raises it to the 1/nth power (in this case, n = 2). The returned value is a double.
-	teacher.geoMean(0,1);
-	// Should return 0
-	teacher.geoMean(1,1);
-	// Should return 1
 	teacher.geoMean(-1,3);
 	// Should not run
-	teacher.geoMean(-2,-3);
-	// Should return sqrt6
+*/
 */	
 	}
 }
