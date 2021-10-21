@@ -57,6 +57,5 @@ public class StatsDriver{
 	teacher.geoMean(-1,3);
 	// Should not run
 */
-*/	
 	}
 }
