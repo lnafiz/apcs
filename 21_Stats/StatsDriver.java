@@ -6,15 +6,15 @@ public class StatsDriver{
 	// While answer is 1.5, java has to return an integer, so it rounds down to 1.
 	System.out.println(teacher.mean(10,10));
 	// returns 10
-	teacher.mean(-10,-10);
+	System.out.println(teacher.mean(-10,-10));
 	// returns -10
-	teacher.mean(-10.0,-2.0);
+	System.out.println(teacher.mean(-10.0,-2.0));
 	// returns -6.0
-	teacher.mean(0,10);
+	System.out.println(teacher.mean(0,10));
 	// returns 5
-	teacher.mean(10,5.0);
+	System.out.println(teacher.mean(10,5.0));
 	// returns 7.5
-	teacher.mean(-10,5);
+	System.out.println(teacher.mean(-10,5));
 	// returns -2.5
 /*
 	teacher.mean(0);
