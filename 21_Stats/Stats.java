@@ -4,9 +4,10 @@ APCS
 HW 21 - STAtisTically Speaking...
 2021-10-20
 DISCO -
+ - Square root, cube root, and power operations are written as methods which don't need a heading because their functions are already stated.
  - When using Math.sqrt and Math.cbrt operations, for the geoMean methods we want to return integers, we have to specify for integers in the return statement. However, the declaration of the variable must start off with double, no matter what.
 QCC -
- - How compound can if methods be (there's two so far, if and else)?
+ - I tried using the power method before switching to root methods. When I used power, I tried entering the power as a fraction and decimal, with the fraction using both decimals and integers. When I used a fraction, the return would be an integer, while a decimal provided with the approximation. Why is that? Power method inherently returns doubles, and even when using fractions, you get decimals, so how does the answer somehow become integers even without the specification for integers?
 **/
 
 
