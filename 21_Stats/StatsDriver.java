@@ -25,17 +25,17 @@ public class StatsDriver{
 	// does not run
 	THESE DO NOT RUN BECAUSE THESE ARE NOT APPLICABLE TO MEAN METHODS
 */		
-	teacher.max((int) 1,(int) 2);
+	System.out.println(teacher.max(1,2));
 	// object teacher carries out method max, which compares arguments 1 and 2 and returns the greatest value [1 < 2, 2]. The returned value is an integer.
-	teacher.max((double) 1,(double) 2);
+	System.out.println(teacher.max(1,2));
 	// object teacher carries out method max, which compares arguments 1 and 2 and returns the greatest value [1 < 2, 2]. The returned value is a double.
-	teacher.max(0,0);
+	System.out.println(teacher.max(0,0));
 	// Should return 0
-	teacher.max(1,2,3);
+	System.out.println(teacher.max(1,2,3));
 	// Should not run
-	teacher.max(10,10.0);
+	System.out.println(teacher.max(10,10.0));
 	// Should return 10.0
-	teacher.max(-10,0);
+	System.out.println(teacher.max(-10,0));
 	// Should return 0
 /*
 	teacher.max();
