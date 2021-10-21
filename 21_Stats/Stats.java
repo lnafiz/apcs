@@ -42,17 +42,16 @@ public class Stats {
      return b;
      }
   }
-/*   
+   
   public static double geoMean(int a, int b) {
-     double geoMean = Math.pow(a*b,1/2);
-        return geoMean;
+     double geoMean = Math.sqrt(a*b);
+        return (int) geoMean;
   //IMPORTANT: LOOK AT DISCO
   //IMPORTANT: LOOK AT DISCO
   }
-*/ 
    
   public static double geoMean(double a, double b) {
-     double geoMean = Math.pow(a*b,0.5);
+     double geoMean = Math.sqrt(a*b);
      return geoMean;
 
   }
@@ -60,31 +59,27 @@ public class Stats {
   public static int max(int a, int b, int c) {
      if (a >= b && a >= c){
         int max = a;
-        return max;
      }
      if (b >= a && b >= c){
         int max = b;
-        return max;
      }
      if (c >= a && c >= b){
         int max = c;
-        return max;
      }
-  }
+     return max;
+ }
 
   public static double max(double a, double b, double c) {
       if (a >= b && a >= c){
         double max = a;
-        return max;
      }
      if (b >= a && b >= c){
         double max = b;
-        return max;
      }
      if (c >= a && c >= b){
         double max = c;
-        return max; 
      }
+     return max; 
  }
    /*
   public static int max(int a, int b, int c) {
