@@ -15,6 +15,11 @@ public class Stats {
      int mean = (a+b)/2;
         return mean;
      }
+  
+  public static double mean (double a, double b) {
+     double mean = (a+b)/2;
+        return mean;
+     }
 }
   
 /*
