@@ -12,9 +12,10 @@
 public class Stats {
 
   public static int mean(int a, int b) {
+     int mean =  
 
   }
-
+/*
   public static double mean(double a, double b) {
 
   }
@@ -56,5 +57,5 @@ public class Stats {
   public static void main( String[] args ) {
 
   }
-
+*/
 }//end class
