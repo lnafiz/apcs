@@ -70,7 +70,7 @@ public class Stats {
         int max = c;
         return max;
      }
-  
+  }
 
   public static double max(double a, double b, double c) {
       if (a >= b && a >= c){
@@ -85,7 +85,7 @@ public class Stats {
         double max = c;
         return max; 
      }
-  
+ }
    /*
   public static int max(int a, int b, int c) {
 
