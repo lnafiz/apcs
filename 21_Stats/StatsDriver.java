@@ -3,10 +3,32 @@ public class StatsDriver{
 	Stats teacher = new Stats();
 	// creates new object with class Stats
 	System.out.println(teacher.mean(1,2));
+	// While answer is 1.5, java has to return an integer, so it rounds down to 1.
+	System.out.println(teacher.mean(10,10));
+	// returns 10
+	teacher.mean(-10,-10);
+	// returns -10
+	teacher.mean(-10.0,-2.0);
+	// returns -6.0
+	teacher.mean(0,10);
+	// returns 5
+	teacher.mean(10,5.0);
+	// returns 7.5
+	teacher.mean(-10,5);
+	// returns -2.5
 /*
-	// object teacher carries out method mean, which returns the value of the sum of 1 and 2 divided by 2 [(1+2)/2)]. The returned value is an integer.
-	teacher.mean((double) 1,(double) 2);
-	// object teacher carries out method mean, which returns the value of the sum of 1 and 2 divided by 2 [(1+2)/2)]. The returned value is a double.
+	teacher.mean(0);
+	// Should not run
+	teacher.mean(0,0,0);
+	// Should not run
+	teacher.mean();
+	// Should not run
+*/
+		
+/*
+	
+	teacher.mean(1,2);
+	
 	teacher.mean(10,10);
 	// Expected value should be 10
 	teacher.mean(-10,-10);
