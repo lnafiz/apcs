@@ -14,7 +14,7 @@ public class Stats {
   public static int mean(int a, int b) {
      int mean =  
 
-  }
+  
 /*
   public static double mean(double a, double b) {
 
