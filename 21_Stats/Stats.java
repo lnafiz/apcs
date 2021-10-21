@@ -42,15 +42,19 @@ public class Stats {
      return b;
      }
   }
-/*
+
   public static int geoMean(int a, int b) {
+     int geoMean = sqrt(a*b);
+        return geoMean;
 
   }
 
   public static double geoMean(double a, double b) {
+     double geoMean = sqrt(a*b);
+     return geoMean;
 
   }
-
+/*
   public static int max(int a, int b, int c) {
 
   }
