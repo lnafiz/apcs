@@ -48,15 +48,45 @@ public class Stats {
         return geoMean;
   //IMPORTANT: LOOK AT DISCO
   //IMPORTANT: LOOK AT DISCO
-   
   }
-*/   
+*/ 
+   
   public static double geoMean(double a, double b) {
      double geoMean = Math.pow(a*b,0.5);
      return geoMean;
 
   }
-/*
+
+  public static int max(int a, int b, int c) {
+     if (a >= b && a >= c){
+        int max = a;
+        return max;
+     }
+     if (b >= a && b >= c){
+        int max = b;
+        return b;
+     }
+     if (c >= a && c >= b){
+        int max = c;
+        return c;
+     }
+  }
+
+  public static double max(double a, double b, double c) {
+      if (a >= b && a >= c){
+        double max = a;
+        return max;
+     }
+     if (b >= a && b >= c){
+        double max = b;
+        return b;
+     }
+     if (c >= a && c >= b){
+        double max = c;
+        return c; 
+     }
+  }
+   /*
   public static int max(int a, int b, int c) {
 
   }
