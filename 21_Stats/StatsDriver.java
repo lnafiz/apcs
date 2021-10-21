@@ -3,6 +3,8 @@ public class StatsDriver{
 	Stats teacher = new Stats();
 	// creates new object with class Stats
 	teacher.mean((int) 1,(int) 2);
+	}
+}
 	/*
 	// object teacher carries out method mean, which returns the value of the sum of 1 and 2 divided by 2 [(1+2)/2)]. The returned value is an integer.
 	teacher.mean((double) 1,(double) 2);
@@ -53,6 +55,7 @@ public class StatsDriver{
 	// Should not run
 	teacher.geoMean(-2,-3);
 	// Should return sqrt6
-	*/
+	
 	}
 }
+*/
