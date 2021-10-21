@@ -44,7 +44,7 @@ public class StatsDriver{
 */
 
 	System.out.println(teacher.geoMean(1,2));
-	// returns approximation of square root of 2
+	// returns 1.0
 	System.out.println(teacher.geoMean(1.0,2.0));
 	// returns approximation of square root of 2
 	System.out.println(teacher.geoMean(0,1));
@@ -52,17 +52,35 @@ public class StatsDriver{
 	System.out.println(teacher.geoMean(1,1));
 	// returns 1.0
 	System.out.println(teacher.geoMean(-2,-3));
-	// returns approximation of square root of 6
+	// returns 2.0
 /*
 	teacher.geoMean(-1,3);
 	// Does not run
 	// YOU CANNOT FIND THE SQAURE ROOT OF A NEGATIVE NUMBER
 */
 	System.out.println(teacher.max(1,2,3));
+	// returns 3
 	System.out.println(teacher.max(1.0,3.0,2.0));
+	// returns 3.0
 	System.out.println(teacher.max(1,1,2));
+	// returns 2
 	System.out.println(teacher.max(1.0,2.0,1.0));
+	// returns 2.0
 	System.out.println(teacher.max(2,2,2));
+	// returns 2
 	System.out.println(teacher.max(-1.0,-2.0,-2.0));
+	// returns -1.0
+
+	System.out.println(teacher.geoMean(1,2,3));
+	// returns
+	System.out.println(teacher.geoMean(1.0,2.0,3.0));
+	// returns
+	System.out.println(teacher.geoMean(-1,-2,-3));
+	// returns
+	System.out.println(teacher.geoMean(0,2,3));
+	// returns
+	System.out.println(teacher.geoMean(2.0,2.0,2.0));
+	// returns
+	
 	}
 }
