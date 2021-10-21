@@ -2,7 +2,7 @@ public class StatsDriver{
 	public static void main (String[] args){
 	Stats teacher = new Stats();
 	// creates new object with class Stats
-	System.out.println(teacher.mean(2,2));
+	System.out.println(teacher.mean(3,2));
 /*
 	// object teacher carries out method mean, which returns the value of the sum of 1 and 2 divided by 2 [(1+2)/2)]. The returned value is an integer.
 	teacher.mean((double) 1,(double) 2);
