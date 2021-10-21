@@ -43,10 +43,12 @@ public class Stats {
      }
   }
    
-  public static int geoMean(int a, int b) {
+  public static double geoMean(int a, int b) {
      double geoMean = Math.pow(a*b,1/2);
         return geoMean;
-  
+  //IMPORTANT: LOOK AT DISCO
+  //IMPORTANT: LOOK AT DISCO
+   
   }
    
   public static double geoMean(double a, double b) {
