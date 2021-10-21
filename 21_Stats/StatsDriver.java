@@ -56,7 +56,7 @@ public class StatsDriver{
 /*
 	teacher.geoMean(-1,3);
 	// Does not run
-	// YOU CANNOT FIND THE SQAURE ROOT OF A NEGATIVE NUMBER
+	// YOU CANNOT FIND THE SQUARE ROOT OF A NEGATIVE NUMBER
 */
 	System.out.println(teacher.max(1,2,3));
 	// returns 3
