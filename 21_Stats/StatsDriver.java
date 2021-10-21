@@ -31,15 +31,16 @@ public class StatsDriver{
 	// object teacher carries out method max, which compares arguments 1 and 2 and returns the greatest value [1 < 2, 2]. The returned value is a double.
 	System.out.println(teacher.max(0,0));
 	// Should return 0
-	System.out.println(teacher.max(1,2,3));
-	// Should not run
 	System.out.println(teacher.max(10,10.0));
 	// Should return 10.0
 	System.out.println(teacher.max(-10,0));
 	// Should return 0
 /*
-	teacher.max();
-	// Should not run
+	System.out.println(teacher.max());
+	// Does not run
+	System.out.println(teacher.max(1,2,3));
+	// does not run
+	THESE DO NOT RUN BECAUSE THESE ARE NOT APPLICABLE TO MAXIMUM METHODS
 */
 /*
 	teacher.geoMean((int) 1,(int) 2);
