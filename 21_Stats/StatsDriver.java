@@ -35,7 +35,7 @@ public class StatsDriver{
 	// Should not run
 	teacher.max(1,2,3);
 	// Should not run
-	teacher.max(10,10.0)
+	teacher.max(10,10.0);
 	// Should return 10.0
 	teacher.max(-10,0);
 	// Should return 0
