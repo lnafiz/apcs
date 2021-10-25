@@ -50,7 +50,7 @@ public class Coin {
   else{
   System.out.println("Name not usable");
   }
-  upFace = "heads"                                                                                                     
+  upFace = "heads";                                                                                                     
   }
 
 /*
