@@ -62,7 +62,7 @@ public class Coin {
   if ((s == "penny") || (s == "nickel") || (s == "dime") || (s == "quarter") || (s == "half dollar") || (s == "dollar")){
   name = s; 
   }  
-  if ((nowFace == "heads) || (nowFace == "tails"))
+  if ((nowFace == "heads) || (nowFace == "tails")){
        upFace = nowFace;
   }
 
