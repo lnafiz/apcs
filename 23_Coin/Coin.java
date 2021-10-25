@@ -28,7 +28,7 @@ public class Coin {
   flipCtr = 0;
   headsCtr = 0;
   tailsCtr = 0;
-  bias = 1.0;
+  bias = 0.5;
     }
 
 
