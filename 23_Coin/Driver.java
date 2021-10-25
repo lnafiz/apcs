@@ -27,7 +27,7 @@ public class Driver {
       System.out.println("mine: " + mine);
       System.out.println("yours: " + yours);
       System.out.println("wayne: " + wayne);
-      /*===================TOP==========================
+      
       //test flip() method
       System.out.println("\nAfter flipping...");
       yours.flip();
@@ -41,8 +41,7 @@ public class Driver {
       else {
         System.out.println( "No match. Firestarter you can not be." );
       }
-      ====================BOTTOM======================*/
-
+     
   }//end main()
 
 }//end class
