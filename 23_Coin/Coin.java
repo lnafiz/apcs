@@ -52,5 +52,5 @@ public class Coin {
   }
   upFace = "heads";                                                                                                     
   }
-
+}
                                                                                                        
