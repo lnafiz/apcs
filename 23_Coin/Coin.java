@@ -3,6 +3,7 @@ Nafiz Labib, Jing Yi Feng - Dream Team
 APCS
 HW 23 - What Does Equality Look Like?
 2021-10-24
+Time Spent: ~1.0
 
 DISCO - First time I tried printing out the results of my constructors, I get locations where new Coins are stored instead of actual string outputs (ex. Coin@85ede7b). 
 Credit to Google, Math.random gives a random value from 0.0 to 1.0.
