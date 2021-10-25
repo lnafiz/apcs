@@ -7,7 +7,14 @@
 public class Coin {
 
   //attributes aka instance vars
-  private double value
+  private double value;
+  private String upFace;
+  private String name;
+  private int flipCtr;
+  private int headsCtr;
+  private int tailsCtr;
+  private double bias;
+  
 
 
   /***
@@ -16,8 +23,13 @@ public class Coin {
    *  postcond:
    ***/
   public Coin() {
-
-  }
+  name = "null";
+  upface = "heads";
+  flipCtr = 0;
+  headsCtr = 0;
+  tailsCtr = 0;
+  bias = 1.0;
+    }
 
 
   /***
@@ -32,7 +44,13 @@ public class Coin {
       postcond:
   ***/
   public Coin( String s ) {
-
+  if ((s == "penny") || (s == "nickel") || (s == "dime") || (s = "quarter") || (s = "half dollar") || (s == "dollar"")){
+  name = s; 
+                                                                                                       }
+  else{
+  System.out.println("Name not usable!");
+  }
+  upFace = "heads"                                                                                                     
   }
 
 
