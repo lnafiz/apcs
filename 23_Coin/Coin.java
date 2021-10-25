@@ -1,7 +1,12 @@
 /***
- *  class Coin
- *  by Clyde "Thluffy" Sinclair
- *  SKELETON
+Nafiz Labib, Jing Yi Feng - Dream Team
+APCS
+HW 23 - What Does Equality Look Like?
+2021-10-24
+
+DISCO - First time I tried printing out the results of my constructors, I get locations where new Coins are stored instead of actual string outputs (Coin@85ede7b) 
+
+QCC - 
  ***/
 
 public class Coin {
