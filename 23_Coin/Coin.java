@@ -62,7 +62,7 @@ public class Coin {
 
   }
 
-/*
+/**************
   // Accessors...
   // ----------------------------
   public String getUpFace() {
@@ -141,7 +141,7 @@ public class Coin {
   public String toString() {
 
   }
-*/
+**********/
 }//end class
 
                                                                                                        
