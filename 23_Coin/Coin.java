@@ -48,7 +48,7 @@ public class Coin {
   name = s; 
                                                                                                        }
   else{
-  System.out.println("Name not usable!");
+  System.out.println("Name not usable");
   }
   upFace = "heads"                                                                                                     
   }
