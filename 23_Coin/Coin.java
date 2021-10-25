@@ -44,7 +44,7 @@ public class Coin {
       postcond:
   ***/
   public Coin( String s ) {
-  if ((s == "penny") || (s == "nickel") || (s == "dime") || (s = "quarter") || (s = "half dollar") || (s == "dollar"")){
+  if ((s == "penny") || (s == "nickel") || (s == "dime") || (s = "quarter") || (s = "half dollar") || (s == "dollar")){
   name = s; 
                                                                                                        }
   else{
@@ -53,4 +53,4 @@ public class Coin {
   upFace = "heads";                                                                                                     
   }
 
-                                                                                                       }
+                                                                                                       
