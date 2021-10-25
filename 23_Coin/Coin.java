@@ -94,7 +94,7 @@ upFace="heads";
   }
 
   public int getTailsCtr() {
-    return getTailsCtr;
+    return tailsCtr;
   }
   // ----------------------------  
   
