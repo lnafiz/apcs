@@ -21,13 +21,13 @@ public class Driver {
       Coin mine = new Coin();
       //test 1st overloaded constructor
       Coin yours = new Coin( "quarter" );
-        /*===================TOP==========================
       //test 2nd overloaded constructor
       Coin wayne = new Coin( "dollar", "heads" );
       //test toString() methods of each Coin
       System.out.println("mine: " + mine);
       System.out.println("yours: " + yours);
       System.out.println("wayne: " + wayne);
+      /*===================TOP==========================
       //test flip() method
       System.out.println("\nAfter flipping...");
       yours.flip();
