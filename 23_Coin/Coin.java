@@ -53,7 +53,7 @@ public class Coin {
   upFace = "heads"                                                                                                     
   }
 
-
+/*
   /***
       Coin(String,String) --
       precond:
@@ -142,5 +142,5 @@ public class Coin {
   public String toString() {
 
   }
-
+*/
 }//end class
