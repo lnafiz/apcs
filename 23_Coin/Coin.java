@@ -24,7 +24,7 @@ public class Coin {
    ***/
   public Coin() {
   name = "null";
-  upface = "heads";
+  upFace = "heads";
   flipCtr = 0;
   headsCtr = 0;
   tailsCtr = 0;
@@ -46,7 +46,7 @@ public class Coin {
   public Coin( String s ) {
   if ((s == "penny") || (s == "nickel") || (s == "dime") || (s = "quarter") || (s = "half dollar") || (s == "dollar"")){
   name = s; 
-                                                                                                       }
+                                                                                                       }                                                                                                     }
   else{
   System.out.println("Name not usable");
   }
