@@ -138,7 +138,7 @@ upFace="heads";
     tailsCtr=0;
     bias=.5;
   }
-
+  }
  /***
    * String flip() -- simulates a Coin flip
    * precond:  bias is a double on interval [0.0,1.0]
