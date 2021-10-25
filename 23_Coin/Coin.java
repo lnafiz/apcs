@@ -123,6 +123,7 @@ upFace="heads";
     if(s == "dollar"){
     value = 1.00;
     }
+    return value;
   } 
   
  /***
