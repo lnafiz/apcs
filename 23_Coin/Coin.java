@@ -7,13 +7,13 @@
 public class Coin {
 
   //attributes aka instance vars
-  private double value;
-  private String upFace;
-  private String name;
-  private int flipCtr;
-  private int headsCtr;
-  private int tailsCtr;
-  private double bias;
+  double value;
+  String upFace;
+  String name;
+  int flipCtr;
+  int headsCtr;
+  int tailsCtr;
+  double bias;
   
 
 
