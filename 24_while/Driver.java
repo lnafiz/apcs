@@ -29,6 +29,8 @@ public class Driver {
       System.out.println("wayne: " + wayne);
       
       //test flip() method
+      int matchCtr = 0;
+      while(matchCtr <= 65536 && matchCtr%2005 != 0){
       System.out.println("\nAfter flipping...");
       yours.flip();
       wayne.flip();
@@ -36,10 +38,14 @@ public class Driver {
       System.out.println("wayne: " + wayne);
       //test equals() method
       if ( yours.equals(wayne) ) {
+          matchCtr+=1;
         System.out.println( "Matchee matchee!" );
       }
       else {
         System.out.println( "No match. Firestarter you can not be." );
+      }
+      System.out.println("Number of heads: " + headsCtr);
+      System.out.println("Number of matches: " + matchCtr)
       }
      
   }//end main()
