@@ -155,7 +155,8 @@ upFace="heads";
   headsCtr+=1;
   upFace = "heads";
   bias = headsCtr/flipCtr;
-  return upFace;}
+  return upFace;
+  return headsCtr;}
   else{
   tailsCtr+=1;
   upFace = "tails";
