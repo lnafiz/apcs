@@ -30,7 +30,7 @@ public class Driver {
       
       //test flip() method
       int matchCtr = 1;
-      while(matchCtr <= 65537 && matchCtr%2005 != 0){
+      while(matchCtr <= 65537 || matchCtr%2005 != 0){
       System.out.println("\nAfter flipping...");
       yours.flip();
       yours.getHeadsCtr();
@@ -45,10 +45,9 @@ public class Driver {
       }
       else {
         System.out.println( "No match. Firestarter you can not be." );
+        }
       }
-      System.out.println("Number of matches: " + matchCtr);
-      }
-     
+     System.out.println("Number of matches: " + matchCtr);
   }//end main()
 
 }//end class
