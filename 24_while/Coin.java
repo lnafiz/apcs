@@ -13,13 +13,13 @@ Credit to Ameer and Hugo, we compared our work with theirs, especially the overl
 public class Coin {
 
   //attributes aka instance vars
-  double value;
-  String upFace;
-  String name;
-  int flipCtr;
-  int headsCtr;
-  int tailsCtr;
-  double bias;
+  private double value;
+  private String upFace;
+  private String name;
+  private int flipCtr;
+  private int headsCtr;
+  private int tailsCtr;
+  private double bias;
   
 
 
