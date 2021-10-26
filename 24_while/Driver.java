@@ -29,8 +29,8 @@ public class Driver {
       System.out.println("wayne: " + wayne);
       
       //test flip() method
-      int matchCtr = 0;
-      while(matchCtr <= 65536 && matchCtr%2005 != 0){
+      int matchCtr = 1;
+      while(matchCtr <= 65537 && matchCtr%2005 != 0){
       System.out.println("\nAfter flipping...");
       yours.flip();
       yours.getHeadsCtr();
