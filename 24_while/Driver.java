@@ -1,13 +1,14 @@
 /***
-    driver for class Coin
-    ~~~ SUGGESTED WORKFLOW: ~~~
-    1. Compile this file and run. Note anything notable.
-    2. Move the "TOP" line down, so that it is below the first statement.
-    (emacs: with cursor at beginning of TOP line, C-k C-k, DOWN, DOWN, C-y)
-    (your editor: ???)
-    3. Compile and run again.
-    4. Resolve errors one at a time until it works.
-    5. Repeat 2-4 until TOP meets BOTTOM.
+Nafiz Labib, Jing Yi Feng - Dream Team
+APCS
+HW 24 - Get It While You Can
+2021-10-25
+Time Spent: ~20 minutes
+DISCO - 
+- Starting with a matchCtr value of zero is not good, because your loop just won't run, because it's already less than 65536 AND dividing it by any number gives 0. So, to run it, I set the value to 1, and increased the less than condition to 65537.
+- Using an AND in the condition does not work, you'll only get 2005 matches because it'll stop when just one of the conditions becomes false, which is the divisible by birth year. To counter this, use OR. OR only needs 1 statement to be true, and is false only when BOTH conditions are false.
+
+QCC - Everything is public, so why does Java tell me that headsCtr is not found in class Driver?
 ***/
 
 public class Driver {
@@ -47,6 +48,7 @@ public class Driver {
         System.out.println( "No match. Firestarter you can not be." );
         }
       }
+     System.out.println("Number of heads: " + headsCtr);
      System.out.println("Number of matches: " + matchCtr);
   }//end main()
 
