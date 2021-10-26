@@ -33,7 +33,9 @@ public class Driver {
       while(matchCtr <= 65536 && matchCtr%2005 != 0){
       System.out.println("\nAfter flipping...");
       yours.flip();
+      yours.getHeadsCtr();
       wayne.flip();
+      wayne.getHeadsCtr();
       System.out.println("yours: " + yours);
       System.out.println("wayne: " + wayne);
       //test equals() method
