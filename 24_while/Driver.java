@@ -3,7 +3,7 @@ Nafiz Labib, Jing Yi Feng - Dream Team
 APCS
 HW 24 - Get It While You Can
 2021-10-25
-Time Spent: ~20 minutes
+Time Spent: ~ 20 minutes
 DISCO - 
 - Using an AND in the condition does not work, you'll only get 2005 matches because it'll stop when just one of the conditions becomes false, which is the divisible by birth year. To counter this, use OR. OR only needs 1 statement to be true, and is false only when BOTH conditions are false.
 - Need to make another variable for the number of matches, and make sure its value increases after each match.
