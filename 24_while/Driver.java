@@ -5,8 +5,9 @@ HW 24 - Get It While You Can
 2021-10-25
 Time Spent: ~20 minutes
 DISCO - 
-- Starting with a matchCtr value of zero is not good, because your loop just won't run, because it's already less than 65536 AND dividing it by any number gives 0. So, to run it, I set the value to 1, and increased the less than condition to 65537.
 - Using an AND in the condition does not work, you'll only get 2005 matches because it'll stop when just one of the conditions becomes false, which is the divisible by birth year. To counter this, use OR. OR only needs 1 statement to be true, and is false only when BOTH conditions are false.
+- Need to make another variable for the number of matches, and make sure its value increases after each match.
+- I thought it would take a long time for the loop to finish, but it only took a few seconds.
 
 QCC - Everything is public, so why does Java tell me that headsCtr is not found in class Driver?
 ***/
