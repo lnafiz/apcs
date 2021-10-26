@@ -21,7 +21,7 @@ public class Coin {
   int flipCtr;
   int headsCtr;
   int tailsCtr;
-  double bias;
+  double bias = 0.5;
   
 
 
@@ -31,12 +31,7 @@ public class Coin {
    *  postcond:
    ***/
   public Coin() {
-  name = "null";
-  upFace = "heads";
-  flipCtr = 0;
-  headsCtr = 0;
-  tailsCtr = 0;
-  bias = 0.5;
+  reset("heads", 0.5);
     }
 
 
@@ -152,19 +147,16 @@ upFace="heads";
    ***/
   public String flip() {
   double n = Math.random();
-  flipCtr+=1;
-  if(n >= 0.50){
+  if(n >= bias){
   headsCtr+=1;
   upFace = "heads";
-  bias = headsCtr/flipCtr;
-  return upFace;}
+  }
   else{
   tailsCtr+=1;
   upFace = "tails";
+  }
   flipCtr+=1;
-  bias=headsCtr/flipCtr;
   return upFace;
-    }
   }
   /***
    * boolean equals(Coin) -- checks to see if 2 coins have same face up
@@ -175,7 +167,7 @@ upFace="heads";
   public boolean equals( Coin other ) {
 
     return other.upFace==upFace;
-}
+	}
   /***
    * String toString() -- overrides toString() provided by Java
    * precond: n/a
