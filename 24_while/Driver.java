@@ -46,7 +46,6 @@ public class Driver {
       else {
         System.out.println( "No match. Firestarter you can not be." );
       }
-      System.out.println("Number of heads: " + headsCtr);
       System.out.println("Number of matches: " + matchCtr);
       }
      
