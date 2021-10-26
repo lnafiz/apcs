@@ -48,7 +48,7 @@ public class Driver {
         System.out.println( "No match. Firestarter you can not be." );
         }
       }
-     System.out.println(\n"NUMBER OF MATCHES: " + matchCtr);
+     System.out.println("\nNUMBER OF MATCHES: " + matchCtr);
   }//end main()
 
 }//end class
