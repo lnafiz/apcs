@@ -1,0 +1,2 @@
+string fence = "|"
+while (fence != "|--|--|"){}
