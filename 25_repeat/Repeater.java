@@ -6,7 +6,8 @@ public class Repeater{
     while(post < numPosts){
     fence+="--|";
     post++; // code for increment  
-  } 
+  }
+    return fence;
   } //end of fenceW
  /* 
   public static String fenceR(int numPosts){
