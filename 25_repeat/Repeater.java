@@ -14,7 +14,7 @@ public class Repeater{
   
   public static String fenceR(int numPosts){
   
-    if (numPosts == 1){
+    if (numPosts == 1 || numPosts < 0){
     return "|";
       }
     else{
