@@ -36,14 +36,14 @@ public class Repeater{
   
 public static void main(String[] args){
   System.out.println("fenceW Results...");
-  System.out.println(fenceW(1));
-  System.out.println(fenceW(3));
-  System.out.println(fenceW(-1)); // prints original post because it's not part of while loop but does NOT print more posts because numPosts > posts never happens. 
+  System.out.println(fenceW(1) + "fenceW(1)");
+  System.out.println(fenceW(3) + "fenceW(3)");
+  System.out.println(fenceW(-1) + "fenceW(-1)"); // prints original post because it's not part of while loop but does NOT print more posts because numPosts > posts never happens. 
   
   System.out.println("\nfenceR Results...");
-  System.out.println(fenceR(1));
-  System.out.println(fenceR(3));
-  System.out.println(fenceR(-1)); // prints original post because it's part of condition, but does NOT print more posts because condition states that more can't be printed if numPosts <= 1.
+  System.out.println(fenceR(1) + "fence(1)");
+  System.out.println(fenceR(3) + "fence(3)");
+  System.out.println(fenceR(-1) + "fence(-1)"); // prints original post because it's part of condition, but does NOT print more posts because condition states that more can't be printed if numPosts <= 1.
 
 
 } //end of main
