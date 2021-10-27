@@ -1,5 +1,6 @@
 public class Repeater{
-  String fenceW(int numPosts){
+  
+  public static String fenceW(int numPosts){
     int post = 1;
     String fence = "|";
     while(post < numPosts){
@@ -8,7 +9,7 @@ public class Repeater{
   } 
   } //end of fenceW
  /* 
-  String fenceR(int numPosts){
+  public static String fenceR(int numPosts){
   
   } //end of fenceR
   */
