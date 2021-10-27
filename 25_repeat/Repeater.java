@@ -15,7 +15,7 @@ public class Repeater{
   public static String fenceR(int numPosts){
   
     if (numPosts == 1){
-    System.out.println("|");
+    return "|";
       }
     //else{
     //}
