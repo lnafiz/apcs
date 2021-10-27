@@ -18,7 +18,7 @@ public class Repeater{
     return "|";
       }
     else{
-    return fenceR(numPosts-1)+"--|"}
+    return fenceR(numPosts-1)+"--|";}
   } //end of fenceR
   
 public static void main(String[] args){
