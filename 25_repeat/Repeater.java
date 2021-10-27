@@ -17,6 +17,8 @@ public class Repeater{
 public static void main(String[] args){
   System.out.println(fenceW(1));
   System.out.println(fenceW(3));
+  System.out.println(fenceW(-1));
+
 
 } //end of main
 } //end of class
