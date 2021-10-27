@@ -17,8 +17,6 @@ public class Repeater{
     if (numPosts == 1){
     return "|";
       }
-    //else{
-    //}
   } //end of fenceR
   
 public static void main(String[] args){
