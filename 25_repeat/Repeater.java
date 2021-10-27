@@ -27,7 +27,7 @@ public static void main(String[] args){
   System.out.println(fenceW(3));
   System.out.println(fenceW(-1)); // prints original post because it's not part of while loop but does NOT print more posts.
   
-  System.out.println("fenceR Results...");
+  System.out.println("\nfenceR Results...");
   System.out.println(fenceR(1));
   System.out.println(fenceR(3));
   System.out.println(fenceR(-1)); // prints original post because it's part of condition, but does NOT print more posts.
