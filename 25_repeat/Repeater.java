@@ -1,9 +1,10 @@
 public class Repeater{
   
   public static String fenceW(int numPosts){
-    int post = 1;
-    String fence = "|";
+    
     while(post < numPosts && numPosts > 0){
+    int post = 1;
+    String fence = "|";  
     fence+="--|";
     post++; // code for increment  
   }
