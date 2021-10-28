@@ -84,4 +84,23 @@ public class Stats {
       double geoMean = Math.cbrt(a*b*c);
       return geoMean;
   }
+  
+  public static int gcd(int a, int b){
+      int divisor;
+      if (a > b){
+      divisor = b;
+      }
+      else{
+      divisor = a;
+      }
+      while (a % divisor != 0 || b % divisor != 0){
+      divisor += -1;
+      }
+      return divisor;
+      }
+  }
+  
+  public static void main(String [] args){
+  System.out.println(gcd(9,12));
+  }
 }//end class
