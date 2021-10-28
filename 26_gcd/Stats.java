@@ -99,8 +99,26 @@ public class Stats {
       return divisor;
       }
   
+  public static int gcdER( int a, int b ){
+  if (a == b){
+    return a;
+  }
+  else{
+  if (a > b){
+    return gcdER(a-b, b);
+  }
+  else{
+    return gcdER(a, b-a);
+    }  
+   }  
+  }
+  
+  public static int gcdEW( int a, int b ){}
   
   public static void main(String [] args){
   System.out.println("GCD: " + gcd(9,12));
+  System.out.println("GCD: " + gcd(12,9));
+  System.out.println("GCD: " + gcdER(9,12));
+  System.out.println("GCD: " + gcdER(12,9));
   }
 }//end class
