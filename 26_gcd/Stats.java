@@ -101,6 +101,6 @@ public class Stats {
   
   
   public static void main(String [] args){
-  System.out.println(gcd(9,12));
+  System.out.println("GCD: " + gcd(9,12));
   }
 }//end class
