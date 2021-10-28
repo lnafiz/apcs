@@ -1,3 +1,15 @@
+/***
+Nafiz Labib, Jing Yi Feng - Dream Team
+APCS
+HW 26 - GCD Three Ways
+2021-10-26
+Time Spent: ~ 25 minutes
+DISCO - 
+- Without if else statements for a > b, the gcdEr and gcdEW would not work properly because the numbers would never become the same.
+
+QCC - If all three of these provide the same answer in the same (sort of) amount of time, is there a purpose to find the most "efficient" one or is this just to keep our options open? 
+***/
+
 public class Stats {
 
   public static int mean(int a, int b) {
