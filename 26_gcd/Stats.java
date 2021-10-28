@@ -109,9 +109,9 @@ public class Stats {
   }
   else{
     return gcdER(a, b-a);
-    }  
    }  
-  }
+   }  
+   }
 
  public static int gcdEW( int a, int b ){
     while (a != b){
