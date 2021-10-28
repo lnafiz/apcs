@@ -98,7 +98,7 @@ public class Stats {
       }
       return divisor;
       }
-  }
+  
   
   public static void main(String [] args){
   System.out.println(gcd(9,12));
