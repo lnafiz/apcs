@@ -112,16 +112,25 @@ public class Stats {
     }  
    }  
   }
- /* 
+
  public static int gcdEW( int a, int b ){
-    while 
+    while (a != b){
+      if(a > b){
+        a = a - b; 
+      }
+      else{
+        b = b - a;
+      }
+    }
+   return b;
  }
- */ 
+
   public static void main(String [] args){
   System.out.println("GCD: " + gcd(9,12));
   System.out.println("GCD: " + gcd(12,9));
   System.out.println("GCD: " + gcdER(9,12));
   System.out.println("GCD: " + gcdER(12,9));
-  System.out.println("GCD: " + gcdER(2,9));  
+  System.out.println("GCD: " + gcdEW(9,12));
+  System.out.println("GCD: " + gcdEW(12,9));
   }
 }//end class
