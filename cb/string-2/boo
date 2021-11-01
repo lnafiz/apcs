@@ -48,4 +48,42 @@ public int countCode(String str) {
   return code;
 }
 
+public boolean endOther(String a, String b) {
+  boolean same;
+  String smaller;
+  String larger;
+  if (a.length() < b.length()){
+    smaller = a;
+    larger = b;
+  }
+  else{
+    smaller = b;
+    larger = a;
+  }
+  larger = larger.toLowerCase();
+  smaller = smaller.toLowerCase();
+  int i = larger.length() - smaller.length();
+  if (larger.substring(0,i+1).equals(smaller) || larger.substring(i,larger.length()).equals(smaller)){
+    same = true;
+  }
+  else{
+    same = false;
+  }
+  return same;
+}
+
+public boolean xyzThere(String str) {
+   if ((str.length() > 2) && ((str.substring(0, 3)).equals("xyz"))){
+        return true;
+      }
+ 
+ for (int i = 0; i <= str.length(); i++){
+        if (i + 4 <= str.length()){
+          if (((str.substring(i+1, i+4)).equals("xyz") && (!(str.substring(i, i+1)).equals(".")))){
+            return true;
+          }
+        }
+      }
+      return false;
+    }
 */
