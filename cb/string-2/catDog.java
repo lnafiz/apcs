@@ -1,8 +1,20 @@
-public String doubleChar(String str) {
-  String result = "";
-  for(int i = 0; i < str.length();i++){
-    result +=str.substring(i,i+1);
-    result +=str.substring(i,i+1);
+public boolean catDog(String str) {
+  boolean cd;
+  int cat = 0;
+  int dog = 0;
+  for(int i=0; i < str.length()-2;i++){
+    if (str.substring(i,i+3).equals("cat")){
+      cat += 1;
+    }
+    if (str.substring(i,i+3).equals("dog")){
+      dog += 1;
+    }
   }
-  return result;
+  if (cat == dog){
+    cd = true;
+  }
+  else{
+    cd = false;
+  }
+  return cd;
 }
