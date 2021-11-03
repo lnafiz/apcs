@@ -23,6 +23,7 @@ public class Commafier {
         int intArg = Integer.parseInt(arg);
         System.out.println(commafyR(intArg));
       }
+/*
       // Testing commafyR
       System.out.println(commafyR(1));
       System.out.println(commafyR(10));
@@ -40,5 +41,6 @@ public class Commafier {
       System.out.println(commafyF(1000));
       System.out.println(commafyF(12345));
       System.out.println(commafyF(100000000));
+*/
  }
 }
