@@ -1,7 +1,7 @@
 public class Commafier {
     public static String commafyR(int input){
       String stringInput = Integer.toString(input);
-      if (stringInput.length() <= 3){ // base case
+      if (stringInput.length() <= 3){ 
         return stringInput;
       }
       else{ // recursive reduction
@@ -23,5 +23,20 @@ public class Commafier {
         int intArg = Integer.parseInt(arg);
         System.out.println(commafyR(intArg));
       }
+      // Testing commafyR
+      System.out.println(commafyR(1));
+      System.out.println(commafyR(10));
+      System.out.println(commafyR(101));
+      System.out.println(commafyR(1000));
+      System.out.println(commafyR(12345));
+      System.out.println(commafyR(100000000));
+     
+      // Testing commafyF
+      System.out.println(commafyF(1));
+      System.out.println(commafyF(10));
+      System.out.println(commafyF(101));
+      System.out.println(commafyF(1000));
+      System.out.println(commafyF(12345));
+      System.out.println(commafyF(100000000));
  }
 }
