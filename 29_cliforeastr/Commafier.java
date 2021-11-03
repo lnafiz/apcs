@@ -1,3 +1,16 @@
+/***
+Heroes of the Zeroes - Nafiz Labib, Jing Yi Feng, Jomin Zhang
+APCS
+HW 29 - Which Way Do You Roll?
+2021-11-02
+Time Spent: ~ 1 hour
+DISCO - 
+- To use command line for this program, you enter "java Commafier <integer number of your choice>" once compiling is successful
+- parseInt is for converting integer values to String. 
+
+QCC - 
+- I've heard about something called scanner that can be used in place of the foreach loop (I think) to take values in command line. Can it be used here, and if so, how? (Not related to curriculum so far, just asking.)
+***/
 public class Commafier {
     public static String commafyR(int number){
       String stringNumber = Integer.toString(number);
