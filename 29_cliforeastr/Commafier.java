@@ -15,7 +15,7 @@ public class Commafier {
       for (int a = 3; a < stringNumber.length(); a += 4){
         stringNumber = stringNumber.substring(0, stringNumber.length()-a) + "," + stringNumber.substring(stringNumber.length()-a, stringNumber.length());
       }
-      return stringInput;
+      return stringNumber;
     }
 
     public static void main(String[] args) {
