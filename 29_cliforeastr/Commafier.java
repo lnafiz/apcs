@@ -23,3 +23,5 @@ public class Commafier {
         int intArg = Integer.parseInt(arg);
         System.out.println(commafyR(intArg));
       }
+ }
+}
