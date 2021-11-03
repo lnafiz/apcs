@@ -30,7 +30,9 @@ public class Commafier {
       System.out.println(commafyR(1000));
       System.out.println(commafyR(12345));
       System.out.println(commafyR(100000000));
-     
+      
+      System.out.println("");
+      
       // Testing commafyF
       System.out.println(commafyF(1));
       System.out.println(commafyF(10));
