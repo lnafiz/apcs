@@ -49,6 +49,22 @@ public class Pig
   }
 
   
+  /*=====================================
+    int countVowels(String) -- counts vowels in a String
+    pre:  w != null
+    post: countVowels("meatball") -> 3
+    =====================================*/
+  public static int countVowels( String w ) 
+  { int numVowels = 0;
+   
+   for (int i=0; i < w.length(); i++){
+   if (w.substring(i,i+1).equals(VOWELS.indexOf(w.substring(i,i+1)))){
+      numVowels += 1;
+      }  
+   }
+   return numVowels;   
+  }
+  
 
   public static void main( String[] args ) 
   {
@@ -56,6 +72,7 @@ public class Pig
     System.out.println(hasA("cat", ""));
     System.out.println(isAVowel("a"));
     System.out.println(isAVowel("c"));
+    System.out.println(countVowels("meatball"));
   }//end main()
 
 }//end class Pig
