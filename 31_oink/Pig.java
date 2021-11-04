@@ -65,7 +65,24 @@ public class Pig
    return numVowels;   
   }
   
+  
+ /*=====================================
+    boolean hasAVowel(String) -- tells whether a String has a vowel
+    pre:  w != null
+    post: hasAVowel("cat") -> true
+    hasAVowel("zzz")       -> false
+    =====================================*/
+  public static boolean hasAVowel( String w ) 
+  {
+   if (countVowels(w) = 0){
+     return false;
+   }
+    else{
+    return true;
+    }
+  }
 
+  
   public static void main( String[] args ) 
   {
     System.out.println(hasA("cat", "a"));
@@ -73,6 +90,8 @@ public class Pig
     System.out.println(isAVowel("a"));
     System.out.println(isAVowel("c"));
     System.out.println(countVowels("meatball"));
+    System.out.println(hasAVowel("cat"));
+    System.out.println(hasAVowel("zzz"));
   }//end main()
 
 }//end class Pig
