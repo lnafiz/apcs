@@ -44,6 +44,7 @@ public class Pig
       else{
       exists = false;
       }
+   }   
       return exists;
   }//end hasA()
 
