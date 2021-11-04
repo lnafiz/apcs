@@ -78,6 +78,23 @@ public class Pig
   }
 
   
+  /*=====================================
+    String allVowels(String) -- returns vowels in a String
+    pre:  w != null
+    post: allVowels("meatball") -> "eaa"
+    =====================================*/
+  public static String allVowels( String w ) 
+  {   String vowelWord = "";
+    for (int i = 0; i < w.length(); i++){
+     String letter = w.substring(i,i+1) 
+      if(isAVowel(letter)){
+      vowelWord +=1;
+      }
+    }
+   return vowelWord;
+  }
+  
+  
   public static void main( String[] args ) 
   {
     System.out.println(hasA("cat", "a"));
