@@ -58,8 +58,7 @@ public class Pig
   { int numVowels = 0;
    
    for (int i=0; i < w.length(); i++){
-   String letter = w.substring(i,i+1);
-     if (letter.equals("a") || letter.equals("e") || letter.equals("i") || letter.equals("o") || letter.equals("u")){
+     if (isAVowel(w.substring(i,i+1))){
       numVowels += 1;
       }  
    }
