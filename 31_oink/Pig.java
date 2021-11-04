@@ -86,7 +86,7 @@ public class Pig
   public static String allVowels( String w ) 
   {   String vowelWord = "";
     for (int i = 0; i < w.length(); i++){
-     String letter = w.substring(i,i+1) 
+     String letter = w.substring(i,i+1); 
       if(isAVowel(letter)){
       vowelWord +=1;
       }
@@ -104,6 +104,7 @@ public class Pig
     System.out.println(countVowels("meatball"));
     System.out.println(hasAVowel("cat"));
     System.out.println(hasAVowel("zzz"));
+    Ststem.out.println(allVowels("meatball"));
   }//end main()
 
 }//end class Pig
