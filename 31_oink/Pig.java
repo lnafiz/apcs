@@ -88,7 +88,7 @@ public class Pig
     for (int i = 0; i < w.length(); i++){
      String letter = w.substring(i,i+1); 
       if(isAVowel(letter)){
-      vowelWord +=1;
+      vowelWord +=letter;
       }
     }
    return vowelWord;
