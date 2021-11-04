@@ -74,12 +74,7 @@ public class Pig
     =====================================*/
   public static boolean hasAVowel( String w ) 
   {
-   if (countVowels(w) = 0){
-     return false;
-   }
-    else{
-    return true;
-    }
+   return countVowels(w) > 0;
   }
 
   
