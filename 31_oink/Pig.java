@@ -38,7 +38,16 @@ public class Pig
       return -1 < w.indexOf(letter); // thing we learned in class
   }//end hasA()
 
- 
+
+  /*=====================================
+    boolean isAVowel(String) -- tells whether a letter is a vowel
+    precondition: letter.length() == 1
+    =====================================*/
+  public static boolean isAVowel( String letter ) 
+  {
+    return -1 < VOWELS.indexOf(letter); 
+  }
+
   
 
   public static void main( String[] args ) 
