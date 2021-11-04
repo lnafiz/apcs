@@ -53,7 +53,7 @@ public class Pig
   public static void main( String[] args ) 
   {
     System.out.println(hasA("cat", "a"));
-    System.out.println(hasA("cadillac", "c"));
+    System.out.println(hasA("cat", ""));
     System.out.println(isAVowel("a"));
     System.out.println(isAVowel("c"));
   }//end main()
