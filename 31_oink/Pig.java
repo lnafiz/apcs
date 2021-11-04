@@ -59,7 +59,7 @@ public class Pig
    
    for (int i=0; i < w.length(); i++){
    String letter = w.substring(i,i+1);
-     if (letter.equals(letter.indexOf(VOWELS))){
+     if (letter.equals(VOWELS.indexOf(VOWELS))){
       numVowels += 1;
       }  
    }
