@@ -3,8 +3,16 @@
  * APCS
  * HW31: Otnay Ybay ethay Airhay Onway Ymay Inneechay Inchay Inchay
  * 2021-11-04
- * Time Spent: _hrs
- *
+ * Time Spent: 35 min
+ DISCO - 
+ - Having the VOWELS variable makes the work a lot easier, along with the indexOf() method.
+ - For boolean, to return, all you can do is run a statement that should either be true or false depending on your input.
+ - For the first two boolean methods, using a -1 < helps because it takes care of any string inputs that are empty (first letter is 0, so -1 doesn't exist).
+ 
+ QCC - 
+ - Can indexOf() use integer inputs to search if an integer is within a number (double or integer)? Would it have to be parsed into String?
+ 
+ 
  * class Pig
  * a Pig Latin translator
  * ~~~~~~~~~~~~~~~~~~~ SKELETON ~~~~~~~~~~~~~~~~~~~
