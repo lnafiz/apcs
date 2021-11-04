@@ -35,58 +35,25 @@ public class Pig
     hasA("cat", "p")       -> false
     =====================================*/
   public static boolean hasA( String w, String letter ) 
-  {
-    /* YOUR IMPLEMENTATION HERE */
+  { boolean exists;
+    
+   for (int i = 0; i < w.length; i++){
+      if (w.substring(i,i+1).equals(letter)){
+      exists = true;
+      }
+      else{
+      exists = false;
+      }
+      return exists;
   }//end hasA()
 
- /*** ================START================ 
-  /*=====================================
-    boolean isAVowel(String) -- tells whether a letter is a vowel
-    precondition: letter.length() == 1
-    =====================================*/
-  public static boolean isAVowel( String letter ) 
-  {
-    /* YOUR IMPLEMENTATION HERE */
-  }
-
-
-  /*=====================================
-    int countVowels(String) -- counts vowels in a String
-    pre:  w != null
-    post: countVowels("meatball") -> 3
-    =====================================*/
-  public static int countVowels( String w ) 
-  {
-    /* YOUR IMPLEMENTATION HERE */
-  }
-
-
-  /*=====================================
-    boolean hasAVowel(String) -- tells whether a String has a vowel
-    pre:  w != null
-    post: hasAVowel("cat") -> true
-    hasAVowel("zzz")       -> false
-    =====================================*/
-  public static boolean hasAVowel( String w ) 
-  {
-    /* YOUR IMPLEMENTATION HERE */
-  }
-
-
-  /*=====================================
-    String allVowels(String) -- returns vowels in a String
-    pre:  w != null
-    post: allVowels("meatball") -> "eaa"
-    =====================================*/
-  public static String allVowels( String w ) 
-  {
-    /* YOUR IMPLEMENTATION HERE */
-  }
-  ================END================ ***/
+ 
+  
 
   public static void main( String[] args ) 
   {
-    /* YOUR TEST CALLS HERE */
+    System.out.println(hasA("cat", "a"));
+    System.out.println(hasA("cadillac", "c"));
   }//end main()
 
 }//end class Pig
