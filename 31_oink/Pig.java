@@ -54,8 +54,8 @@ public class Pig
   {
     System.out.println(hasA("cat", "a"));
     System.out.println(hasA("cadillac", "c"));
-    System.out.println(hasA("a"));
-    System.out.println(hasA("c"));
+    System.out.println(isAVowel("a"));
+    System.out.println(isAVowel("c"));
   }//end main()
 
 }//end class Pig
