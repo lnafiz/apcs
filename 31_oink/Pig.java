@@ -35,7 +35,7 @@ public class Pig
     hasA("cat", "p")       -> false
     =====================================*/
   public static boolean hasA( String w, String letter ){ 
-      return 0 < w.indexOf(letter);
+      return -1 < w.indexOf(letter);
   }//end hasA()
 
  
