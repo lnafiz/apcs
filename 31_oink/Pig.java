@@ -34,16 +34,17 @@ public class Pig
     post: hasA("cat", "a") -> true
     hasA("cat", "p")       -> false
     =====================================*/
-  public static boolean hasA( String w, String letter ) 
-   boolean exists;
-    
-   for (int i = 0; i < w.length(); i++){
+  public static boolean hasA( String w, String letter ){ 
+      boolean exists;
+   
+    for (int i = 0; i < w.length(); i++){
       if (w.substring(i,i+1).equals(letter)){
       exists = true;
       }
       else{
       exists = false;
       }
+    }
       return exists;
   }//end hasA()
 
