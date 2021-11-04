@@ -104,7 +104,7 @@ public class Pig
     System.out.println(countVowels("meatball"));
     System.out.println(hasAVowel("cat"));
     System.out.println(hasAVowel("zzz"));
-    Ststem.out.println(allVowels("meatball"));
+    System.out.println(allVowels("meatball"));
   }//end main()
 
 }//end class Pig
