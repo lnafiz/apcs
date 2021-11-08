@@ -181,7 +181,7 @@ public class Pig {
             isUpperCase("A") -> true
       =====================================*/
     public static boolean isUpperCase( String letter ) {
-
+	return CAPS.indexOf(letter) != -1;
     }
 
 
@@ -190,12 +190,11 @@ public class Pig {
       pre:  w != null
       post: hasPunc(“cat.”) -> true
             hasPunc(“cat”) -> false
-      =====================================*/
+            
     public static boolean hasPunc( String w ) {
-
+	return 
     }
-
-
+=====================================*/
     /*=====================================
       boolean beginsWithUpper(String) -- tells whether 1st letter is uppercase
       pre:  w != null and w.length() > 0
@@ -217,6 +216,7 @@ public class Pig {
       System.out.println( "countVowels \t" + countVowels(word) );
       System.out.println( "engToPig \t" + engToPig(word) );
       System.out.println( "---------------------" );
+    
     }
 
   }//end main()
