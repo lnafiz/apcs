@@ -188,13 +188,19 @@ public class Pig {
     /*=====================================
       boolean hasPunc(String) -- tells whether a String contains punctuation
       pre:  w != null
-      post: hasPunc(“cat.”) -> true
-            hasPunc(“cat”) -> false
-            
+      post: hasPunc("cat.") -> true
+            hasPunc("cat") -> false
+   =====================================*/         
     public static boolean hasPunc( String w ) {
-	return 
+	  boolean punc = false;
+  for (int i=0; i < w.length(); i++){
+    if (isPunc(w.substring(i,i+1))){
+    punc = true;
     }
-=====================================*/
+
+  } 
+  return punc;
+    }
     /*=====================================
       boolean beginsWithUpper(String) -- tells whether 1st letter is uppercase
       pre:  w != null and w.length() > 0
@@ -209,16 +215,16 @@ public class Pig {
 
 
   public static void main( String[] args ) {
-
-    for( String word : args ) {
+    for( String word : args ){ 
       System.out.println( "allVowels \t" + allVowels(word) );
       System.out.println( "firstVowels \t" + firstVowel(word) );
       System.out.println( "countVowels \t" + countVowels(word) );
       System.out.println( "engToPig \t" + engToPig(word) );
+      System.out.println("hasPunc \t" + hasPunc(word));
+      System.out.println("beginsWithUpper \t" + beginsWithUpper(word));
       System.out.println( "---------------------" );
-    
-    }
-
+ 
+	  }
   }//end main()
 
 }//end class Pig
