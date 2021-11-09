@@ -193,7 +193,7 @@ public class Pig {
    =====================================*/         
     public static boolean hasPunc( String w ) {
 	  boolean punc = false;
-  for (int i=0; i < w.length(); i++){
+  for (int i=0; i < w.length()-1; i++){
     if (isPunc(w.substring(i,i+1))){
     punc = true;
     }
