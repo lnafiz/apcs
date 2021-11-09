@@ -193,10 +193,11 @@ public class Pig {
    =====================================*/         
     public static boolean hasPunc( String w ) {
 	  boolean punc = false;
-  for (i=0; i < w.length-1; i++){
+  for (int i=0; i < w.length(); i++){
     if (isPunc(w.substring(i,i+1))){
     punc = true;
     }
+
   } 
   return punc;
     }
@@ -214,7 +215,7 @@ public class Pig {
 
 
   public static void main( String[] args ) {
-    for( String word : args ) 
+    for( String word : args ){ 
       System.out.println( "allVowels \t" + allVowels(word) );
       System.out.println( "firstVowels \t" + firstVowel(word) );
       System.out.println( "countVowels \t" + countVowels(word) );
