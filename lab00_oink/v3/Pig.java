@@ -190,7 +190,7 @@ public class Pig {
       pre:  w != null
       post: hasPunc(“cat.”) -> true
             hasPunc(“cat”) -> false
-            
+   =====================================*/         
     public static boolean hasPunc( String w ) {
 	  boolean punc = false;
   for (i=0; i < w.length-1; i++){
@@ -200,7 +200,6 @@ public class Pig {
   } 
   return punc;
     }
-=====================================*/
     /*=====================================
       boolean beginsWithUpper(String) -- tells whether 1st letter is uppercase
       pre:  w != null and w.length() > 0
@@ -222,6 +221,8 @@ public class Pig {
       System.out.println( "engToPig \t" + engToPig(word) );
       System.out.println("hasPunc \t" + hasPunc(word));
       System.out.println( "---------------------" );
+ 
+	  }
   }//end main()
 
 }//end class Pig
