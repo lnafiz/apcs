@@ -188,8 +188,8 @@ public class Pig {
     /*=====================================
       boolean hasPunc(String) -- tells whether a String contains punctuation
       pre:  w != null
-      post: hasPunc(“cat.”) -> true
-            hasPunc(“cat”) -> false
+      post: hasPunc("cat.") -> true
+            hasPunc("cat") -> false
    =====================================*/         
     public static boolean hasPunc( String w ) {
 	  boolean punc = false;
