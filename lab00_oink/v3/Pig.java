@@ -222,10 +222,6 @@ public class Pig {
       System.out.println( "engToPig \t" + engToPig(word) );
       System.out.println("hasPunc \t" + hasPunc(word));
       System.out.println( "---------------------" );
-  
-    
-    }
-
   }//end main()
 
 }//end class Pig
