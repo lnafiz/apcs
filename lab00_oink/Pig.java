@@ -243,7 +243,7 @@ public class Pig {
       System.out.println(engToPig(input));
     }
 
-    for( String word : args ){
+    if(word.length() > 0){
       System.out.println( "allVowels \t" + allVowels(word) );
       System.out.println( "firstVowels \t" + firstVowel(word) );
       System.out.println( "countVowels \t" + countVowels(word) );
