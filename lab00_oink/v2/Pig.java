@@ -24,8 +24,9 @@
 
 
 public class Pig {
-
-  private static final String VOWELS = "aeiouy";
+	
+    private static final String VOWELSNOY = "aeiou";	
+    private static final String VOWELS = "aeiouy";
     private static final String CAPS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static final String PUNCS = ".,:;!?";
 
@@ -202,6 +203,10 @@ public class Pig {
 
     String ans = "";
 
+    if (beginsWithUpper(w))
+      w.toLowerCase();	    	  
+      ans.toUpperCase(ans.substring(0,1));
+	      
     if ( beginsWithVowel(w) )
       ans = w + "way";
 
@@ -210,6 +215,8 @@ public class Pig {
       ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
     }
 
+    if (beginsWithUpper(w))
+      w.toLowerCase();	    
     return ans;
   }
 
