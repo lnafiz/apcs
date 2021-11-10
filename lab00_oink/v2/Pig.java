@@ -202,19 +202,18 @@ public class Pig {
   public static String engToPig( String w ) {
 
     String ans = "";
-
+    String ansCap = ans.substring(0,1);
+    String ansRest = ans.substring(1,ans.length());	  
     
 	      
     if ( beginsWithVowel(w) )
       ans = w + "way";
-
+      
     else {
       int vPos = w.indexOf( firstVowel(w) );
       ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
     }
     if ( beginsWithUpper(w) )
-    String ansCap = ans.substring(0,1);
-    String ansRest = ans.substring(1,ans.length());	  
     ans = ansCap.toUpperCase() + ansRest;
    
     return ans;
