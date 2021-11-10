@@ -177,7 +177,7 @@ public class Pig {
       ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
     }
     
-    allPunc = ""		  
+    String allPunc = ""		  
     if ( hasPunc(w) )
     for (int i = 0; i < ans.length(); i++){
     if (isPunc(ans.substring(i,i+1))){
