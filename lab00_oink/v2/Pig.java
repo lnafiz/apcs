@@ -204,7 +204,7 @@ public class Pig {
     String ans = "";
 
 	      
-    if ( w.indexOf())
+    if (beginsWithVowel(w))
       ans = w + "way";
       
     else {
