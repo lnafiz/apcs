@@ -181,4 +181,23 @@ public class Pig {
     ans = ans.substring(0,i) + ans.substring(i+1,ans.length()) + ans.substring(i,i+1); 
     	}
     }
-    if ( beginsWithUpper(w) )
+     if ( beginsWithUpper(w) )
+    ans = ans.toLowerCase();
+    ans = ans.substring(0,1).toUpperCase() + ans.substring(1,ans.length());		    
+   
+    return ans;
+  }
+  public static void main( String[] args ) {
+    for( String word : args ){ 
+      System.out.println( "allVowels \t" + allVowels(word) );
+      System.out.println( "firstVowels \t" + firstVowel(word) );
+      System.out.println( "countVowels \t" + countVowels(word) );
+      System.out.println("hasPunc \t" + hasPunc(word));
+      System.out.println("beginsWithUpper \t" + beginsWithUpper(word));
+      System.out.println( "engToPig \t" + engToPig(word) );    
+      System.out.println( "---------------------" );
+ 
+	  }
+  }//end main()
+}//end class Pig
+	    
