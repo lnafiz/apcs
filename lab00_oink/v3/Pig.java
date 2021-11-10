@@ -52,7 +52,7 @@ public class Pig {
     **/
   public static boolean isAVowel( String letter ) {
     return VOWELS.indexOf( letter ) != -1 || CAPSVOWELS.indexOf( letter ) != -1;
-    ;	  
+      
   }
   /**
     int countVowels(String) -- counts vowels in a String
