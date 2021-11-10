@@ -211,11 +211,10 @@ public class Pig {
       int vPos = w.indexOf( firstVowel(w) );
       ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
     }
-    String ansCap = ans.substring(0,1);
-    String ansRest = ans.substring(1,ans.length());	  
+    
     if ( beginsWithUpper(w) )
     ans = ans.toLowerCase();
-    ans = ansCap.toUpperCase() + ansRest;
+    ans = ans.substring(0,1).toUpperCase() + ans.substring(1,ans.length());
    
     return ans;
   }
