@@ -104,6 +104,8 @@ public class Pig {
     String ans = "";
     if ( hasAVowel(w) ) //Q: Why this necess?
       ans = allVowels(w).substring(0,1);
+    if (w.substring(0,1).equals("y") || w.substring(0,1).equals("Y"))
+      ans = allVowels(w).substring(1,2);	    
     return ans;
   }
   /**
