@@ -23,7 +23,7 @@
  ***/
 public class Pig {
 	
-    private static final String VOWELSNOY = "aeiou";	
+    private static final String CAPSVOWELS = "AEIOUY";	
     private static final String VOWELS = "aeiouy";
     private static final String CAPS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static final String PUNCS = ".,:;!?";
@@ -52,6 +52,7 @@ public class Pig {
     **/
   public static boolean isAVowel( String letter ) {
     return VOWELS.indexOf( letter ) != -1;
+    return CAPSVOWELS.indexOf( letter ) != -1;	  
   }
   /**
     int countVowels(String) -- counts vowels in a String
