@@ -21,9 +21,12 @@
  *      then develop and test one method at a time.
  *      NEVER STRAY TOO FAR FROM COMPILABILITY/RUNNABILITY!
  ***/
+import java.io.File;  // Import the File class
+import java.io.FileNotFoundException;  // Import this class to handle errors
+import java.util.Scanner;
 public class Pig {
-	
-    private static final String CAPSVOWELS = "AEIOUY";	
+
+    private static final String CAPSVOWELS = "AEIOUY";
     private static final String VOWELS = "aeiouy";
     private static final String CAPS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static final String PUNCS = ".,:;!?";
@@ -52,7 +55,7 @@ public class Pig {
     **/
   public static boolean isAVowel( String letter ) {
     return VOWELS.indexOf( letter ) != -1 || CAPSVOWELS.indexOf( letter ) != -1;
-      
+
   }
   /**
     int countVowels(String) -- counts vowels in a String
@@ -105,7 +108,7 @@ public class Pig {
     if ( hasAVowel(w) ) //Q: Why this necess?
       ans = allVowels(w).substring(0,1);
     if (w.substring(0,1).equals("y") || w.substring(0,1).equals("Y"))
-      ans = allVowels(w).substring(1,2);	    
+      ans = allVowels(w).substring(1,2);
     return ans;
   }
   /**
@@ -140,14 +143,14 @@ public class Pig {
       pre:  w != null
       post: hasPunc("cat.") -> true
             hasPunc("cat") -> false
-   =====================================*/         
+   =====================================*/
     public static boolean hasPunc( String w ) {
 	  boolean punc = false;
   for (int i=0; i < w.length(); i++){
     if (isPunc(w.substring(i,i+1))){
     punc = true;
     }
-  } 
+  }
   return punc;
     }
     /*=====================================
@@ -168,41 +171,58 @@ public class Pig {
     **/
   public static String engToPig( String w ) {
     String ans = "";
-	      
+
     if ( beginsWithVowel(w) && ! w.substring(0,1).equals("y") && ! w.substring(0,1).equals("Y"))
       ans = w + "way";
-      
+
     else {
       int vPos = w.indexOf( firstVowel(w) );
       ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
     }
-    
-    String allPunc = ""		  
+
+    String allPunc = "";
     if ( hasPunc(w) ){
     for (int i = 0; i <= ans.length(); i++){
     if (isPunc(ans.substring(i,i+1))){
-    allPunc +=  ans.substring(i,i+1)
+    allPunc +=  ans.substring(i,i+1);
     	}
-    ans = ans.substring(0,i) + ans.substring(i+1,ans.length()) + allPunc; 		    
+    ans = ans.substring(0,i) + ans.substring(i+1,ans.length()) + allPunc;
     }
     }
      if ( beginsWithUpper(w) ){
     ans = ans.toLowerCase();
-    ans = ans.substring(0,1).toUpperCase() + ans.substring(1,ans.length());		    
+    ans = ans.substring(0,1).toUpperCase() + ans.substring(1,ans.length());
      }
     return ans;
   }
   public static void main( String[] args ) {
-    for( String word : args ){ 
+    try {
+      File words = new File("words.txt");
+      Scanner fileReader = new Scanner(words);
+      while (fileReader.hasNextLine()) {
+        String input = fileReader.nextLine();
+        System.out.println(engToPig(input));
+      }
+      fileReader.close();
+    } catch (FileNotFoundException e) {
+      System.out.println("An error occurred.");
+    }
+
+    Scanner sc = new Scanner( System.in );
+    while( sc.hasNext() ) {
+      String input = sc.next();
+      System.out.println(engToPig(input));
+    }
+
+    for( String word : args ){
       System.out.println( "allVowels \t" + allVowels(word) );
       System.out.println( "firstVowels \t" + firstVowel(word) );
       System.out.println( "countVowels \t" + countVowels(word) );
       System.out.println("hasPunc \t" + hasPunc(word));
       System.out.println("beginsWithUpper \t" + beginsWithUpper(word));
-      System.out.println( "engToPig \t" + engToPig(word) );    
+      System.out.println( "engToPig \t" + engToPig(word) );
       System.out.println( "---------------------" );
- 
+
 	  }
   }//end main()
 }//end class Pig
-	    
