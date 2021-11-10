@@ -167,7 +167,7 @@ public class Pig {
   public static String engToPig( String w ) {
     String ans = "";
 	      
-    if ( beginsWithVowel(w) || ! w.substring(0,1).equals("y") || ! w.substring(0,1).equals("Y"))
+    if ( beginsWithVowel(w) && ! w.substring(0,1).equals("y") && ! w.substring(0,1).equals("Y"))
       ans = w + "way";
       
     else {
