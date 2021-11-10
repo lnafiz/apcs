@@ -177,11 +177,12 @@ public class Pig {
       ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
     }
     
-	  
+    allPunc = ""		  
     if ( hasPunc(w) )
     for (int i = 0; i < ans.length(); i++){
     if (isPunc(ans.substring(i,i+1))){
-    ans = ans.substring(0,i) + ans.substring(i+1,ans.length()) + ans.substring(i,i+1); 
+    allPunc +=  ans.substring(i,i+1)
+    ans = ans.substring(0,i) + ans.substring(i+1,ans.length()) + allPunc; 
     	}
     }
      if ( beginsWithUpper(w) ){
