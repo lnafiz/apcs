@@ -51,8 +51,8 @@ public class Pig {
     precondition: letter.length() == 1
     **/
   public static boolean isAVowel( String letter ) {
-    return VOWELS.indexOf( letter ) != -1;
-    return CAPSVOWELS.indexOf( letter ) != -1;	  
+    return VOWELS.indexOf( letter ) != -1 || CAPSVOWELS.indexOf( letter ) != -1;
+    ;	  
   }
   /**
     int countVowels(String) -- counts vowels in a String
