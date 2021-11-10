@@ -59,7 +59,7 @@ public class Pig {
     precondition: letter.length() == 1
     **/
   public static boolean isAVowel( String letter ) {
-    return VOWELS.indexOf( letter ) != -1;
+    return VOWELSNOY.indexOf( letter ) != -1;
   }
 
 
