@@ -213,7 +213,9 @@ public class Pig {
       ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
     }
     if ( beginsWithUpper(w) )
-    ans = ans.toUpperCase();
+    String ansCap = ans.substring(0,1);
+    String ansRest = ans.substring(1,ans.length());	  
+    ans = ansCap.toUpperCase() + ansRest;
    
     return ans;
   }
