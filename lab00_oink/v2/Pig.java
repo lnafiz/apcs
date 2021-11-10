@@ -203,10 +203,7 @@ public class Pig {
 
     String ans = "";
 
-    if (beginsWithUpper(w))
-      w.toLowerCase();
-      String first = ans.substring (w.substring(0,1));	  
-      ans.toUpperCase(first);
+    
 	      
     if ( beginsWithVowel(w) )
       ans = w + "way";
@@ -215,6 +212,9 @@ public class Pig {
       int vPos = w.indexOf( firstVowel(w) );
       ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
     }
+    if ( beginsWithUpper(w) )
+      ans.toLowerCase();  
+      ans.toUpperCase();
 	  
     return ans;
   }
