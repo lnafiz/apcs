@@ -201,9 +201,9 @@ public class Pig {
     ans = "";
     }
 	  
-    if ( beginsWithVowel(w) && ! w.substring(0,1).equals("y") && ! w.substring(0,1).equals("Y"))
+    if ( beginsWithVowel(w) && ! w.substring(0,1).equals("y") && ! w.substring(0,1).equals("Y")){
       ans = w + "way";
-
+    }
     else {
       int vPos = w.indexOf( firstVowel(w) );
       ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
