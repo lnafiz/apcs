@@ -12,6 +12,7 @@ QCC -
 - How do we have a whole sentence appear once rather than have the program run for every word in the sentence?
 
 HOW WE UTILIZED SCANNER DEMO - 
+- Placed method for scanner within Pig.java and then created a new scanner object in main method to scan words.in file and return strings.  
 
 WHAT CAUSES RUNTIME ERROR IN SCANTIME DEMO - 
 
@@ -196,6 +197,10 @@ public class Pig {
   public static String engToPig( String w ) {
     String ans = "";
 
+    if (allVowels(w).equals("")){
+    ans = w;
+    }
+	  
     if ( beginsWithVowel(w) && ! w.substring(0,1).equals("y") && ! w.substring(0,1).equals("Y"))
       ans = w + "way";
 
