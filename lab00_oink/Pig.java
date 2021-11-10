@@ -106,7 +106,7 @@ public class Pig {
     hasAVowel("zzz") -> false
     **/
   public static boolean hasAVowel( String w ) {
-    return w.indexOf(w) >= 0;
+    return countVowels(w) > 0;
   }
   /**
     String allVowels(String) -- returns vowels in a String
