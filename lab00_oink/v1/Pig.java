@@ -141,28 +141,6 @@ public class Pig {
   }
 
 
-  /**
-    String engToPig(String) -- converts an English word to Pig Latin
-    pre:  w.length() > 0
-    post: engToPig("apple")  --> "appleway"
-    engToPig("strong") --> "ongstray"
-    engToPig("java")   --> "avajay"
-    **/
-  public static String engToPig( String w ) {
-
-    String ans = "";
-
-    if ( beginsWithVowel(w) )
-      ans = w + "way";
-
-    else {
-      int vPos = w.indexOf( firstVowel(w) );
-      ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
-    }
-
-    return ans;
-  }
-
   /*=====================================
       boolean isPunc(String) -- tells whether a character is punctuation
       pre:  symbol.length() == 1
@@ -212,6 +190,28 @@ public class Pig {
 	return isUpperCase(w.substring(0,1) );
     }
 
+
+/**
+    String engToPig(String) -- converts an English word to Pig Latin
+    pre:  w.length() > 0
+    post: engToPig("apple")  --> "appleway"
+    engToPig("strong") --> "ongstray"
+    engToPig("java")   --> "avajay"
+    **/
+  public static String engToPig( String w ) {
+
+    String ans = "";
+
+    if ( beginsWithVowel(w) )
+      ans = w + "way";
+
+    else {
+      int vPos = w.indexOf( firstVowel(w) );
+      ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
+    }
+
+    return ans;
+  }
 
 
   public static void main( String[] args ) {
