@@ -179,7 +179,7 @@ public class Pig {
     
     String allPunc = ""		  
     if ( hasPunc(w) ){
-    for (int i = 0; i < ans.length(); i++){
+    for (int i = 0; i <= ans.length(); i++){
     if (isPunc(ans.substring(i,i+1))){
     allPunc +=  ans.substring(i,i+1)
     	}
