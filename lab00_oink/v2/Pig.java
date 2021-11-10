@@ -59,7 +59,7 @@ public class Pig {
     precondition: letter.length() == 1
     **/
   public static boolean isAVowel( String letter ) {
-    return VOWELSNOY.indexOf( letter ) != -1;
+    return VOWELS.indexOf( letter ) != -1;
   }
 
 
@@ -204,7 +204,7 @@ public class Pig {
     String ans = "";
 
 	      
-    if ( beginsWithVowel(w) )
+    if ( w.indexOf())
       ans = w + "way";
       
     else {
