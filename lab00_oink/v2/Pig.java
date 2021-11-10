@@ -225,9 +225,9 @@ public class Pig {
       System.out.println( "allVowels \t" + allVowels(word) );
       System.out.println( "firstVowels \t" + firstVowel(word) );
       System.out.println( "countVowels \t" + countVowels(word) );
-      System.out.println( "engToPig \t" + engToPig(word) );
       System.out.println("hasPunc \t" + hasPunc(word));
       System.out.println("beginsWithUpper \t" + beginsWithUpper(word));
+      System.out.println( "engToPig \t" + engToPig(word) );    
       System.out.println( "---------------------" );
  
 	  }
