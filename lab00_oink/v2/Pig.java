@@ -213,7 +213,7 @@ public class Pig {
       ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
     }
     if ( beginsWithUpper(w) )
-      ans.toUpperCase();
+    ans = ans.toUpperCase();
    
     return ans;
   }
