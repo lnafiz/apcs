@@ -212,9 +212,6 @@ public class Pig {
       ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
     }
     
-    if ( beginsWithUpper(w) )
-    ans = ans.toLowerCase();
-    ans = ans.substring(0,1).toUpperCase() + ans.substring(1,ans.length());
 	  
     if ( hasPunc(w) )
     for (int i = 0; i < ans.length(); i++){
@@ -222,7 +219,9 @@ public class Pig {
     ans = ans.substring(0,i-1) + ans.substring(i+1,ans.length()) + ans.substring(i,i+1); 
     	}
     }
-	    
+    if ( beginsWithUpper(w) )
+    ans = ans.toLowerCase();
+    ans = ans.substring(0,1).toUpperCase() + ans.substring(1,ans.length());		    
    
     return ans;
   }
