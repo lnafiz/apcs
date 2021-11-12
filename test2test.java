@@ -1,6 +1,5 @@
 public class test2test{
-
-short bruh = 160;    
+long bruh = 160;    
 
 
  public static int div(){
