@@ -50,10 +50,7 @@ public static void main(String[] args){
     System.out.println(3==2);
       System.out.println(!(1<=2));
     System.out.println(xAndY());
- Coin drop = new Coin();
-  Coin dead = new Coin();
-  Coin fred = new Coin();
-
+ 
 }
 
 
