@@ -29,13 +29,25 @@ public static int disco(int x, int y){
    }
    return sum;
  }
-  
+
+public static int xAndY(){
+  int x = 123; int y = 0;
+  while (x>0){
+  y *= 10;
+  y += x%10;
+  x /= 10;  
+  }
+  return y
+}
+ 
 public static void main(String[] args){
   System.out.println(div());
     System.out.println(disco(10,8));
     System.out.println(add());
     System.out.println(3==2);
       System.out.println(!(1<=2));
+    System.out.println(xAndY());
+
 
 
 
