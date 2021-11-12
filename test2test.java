@@ -1,5 +1,5 @@
 public class test2test{
-double bruh = 160;    
+byte bruh = 89;    
 
 public static String Coin(){
  m = "heads";
