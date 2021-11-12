@@ -8,8 +8,21 @@ for(int i=0; i<50; i++){
 return n;
 }
 
+public static int disco(int x, int y){
+  int m = x;
+  int i = 1;
+  while(m%y != 0){
+    m = i*x;
+    i += 1;
+  }
+  return m;
+}
+
+  
 public static void main(String[] args){
   System.out.println(div());
+    System.out.println(disco(10,8));
+
 }
 
 
