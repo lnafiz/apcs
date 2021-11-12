@@ -1,8 +1,12 @@
 public class test2test{
 double bruh = 160;    
 
-
- public static int div(){
+public static String Coin(){
+ m = "heads"
+ return m;
+}
+ 
+public static int div(){
 int n = 253;
 for(int i=0; i<50; i++){
   n = (n+3) / 2;
@@ -49,11 +53,13 @@ public static void main(String[] args){
     System.out.println(3==2);
       System.out.println(!(1<=2));
     System.out.println(xAndY());
-
-
-
-
-
+ Coin drop = new Coin();
+  Coin dead = new Coin();
+  Coin fred = new Coin();
+ System.out.println(drop == dead);
+ System.out.println(drop == fred);
+ System.out.println(drop.equals(dead));
+  System.out.println(drop.equals(fred));
 }
 
 
