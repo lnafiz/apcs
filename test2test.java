@@ -2,7 +2,7 @@ public class test2test{
 double bruh = 160;    
 
 public static String Coin(){
- m = "heads"
+ m = "heads";
  return m;
 }
  
