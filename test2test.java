@@ -1,6 +1,6 @@
 public class test2test{
 
-public int div(){
+public static int div(){
 int n = 253;
 for(int i=0; i<50; i++){
   n = (n+3) / 2;
