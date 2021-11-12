@@ -1,6 +1,6 @@
 public class test2test{
 
-byte bruh = 160;    
+short bruh = 160;    
 
 
  public static int div(){
