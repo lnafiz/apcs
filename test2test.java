@@ -1,6 +1,7 @@
 public class test2test{
 
-int bruh = 160;  
+byte bruh = 160;    
+
 
  public static int div(){
 int n = 253;
