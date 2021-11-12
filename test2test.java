@@ -4,7 +4,7 @@ byte bruh = 89;
 public static int eleven(){
  double x = 5; double y = 2;
   int m = (int)(x + y + x / y - x * y - x / (10*y));
- return m
+ return m;
 }
  
 public static int div(){
