@@ -34,6 +34,10 @@ public static void main(String[] args){
   System.out.println(div());
     System.out.println(disco(10,8));
     System.out.println(add());
+    System.out.println(3==2);
+      System.out.println(!(1<=2));
+
+
 
 
 }
