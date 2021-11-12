@@ -1,6 +1,11 @@
 public class test2test{
 
-public static int div(){
+int bruh = 160;  
+byte bruh = 160;    
+short bruh = 160;  
+long bruh = 160;  
+double bruh = 160;  
+ public static int div(){
 int n = 253;
 for(int i=0; i<50; i++){
   n = (n+3) / 2;
