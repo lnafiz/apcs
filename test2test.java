@@ -37,7 +37,7 @@ public static int xAndY(){
   y += x%10;
   x /= 10;  
   }
-  return y
+  return y;
 }
  
 public static void main(String[] args){
