@@ -1,3 +1,9 @@
+Nafiz Labib
+APCS
+HW 36 - All Quacked Up
+2021-11-18
+Time Spent - 0.3 hours
+
 Debugging:
 Compile-time errors - Incorrect syntax
 Run-time errors - Wrong thing happens while program runs
