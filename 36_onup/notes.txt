@@ -1,0 +1,50 @@
+Nafiz Labib
+APCS
+HW 36 - All Quacked Up
+2021-11-18
+Time Spent - 0.3 hours
+
+Debugging:
+Compile-time errors - Incorrect syntax
+Run-time errors - Wrong thing happens while program runs
+Logic errors - Makes program do wrong thing
+
+Compile-time Errors:
+. x error messages != x errors
+. Read carefully
+. Look at location of error
+. Check syntax of code
+. Looking at same code as compiler?
+. Make backup files
+. Sometimes compiler is wrong
+
+Run-time Errors:
+. Infinite loop/recursion
+. StackOverflow Error
+. Add print statements
+. Exceptions (lot of them)
+. NullPointer - accessed/invoked "null"
+. FileNotFound - in the name...
+. ArrayIndexOutOfBounds - negative index || index > array.length() - 1
+. Arithmetic - bad math
+. Simplify print/program
+
+Logic Errors:
+. Hard to find (no help)
+. Hypothesize
+. Does not do supposed to do?
+. Does that should not?
+. Unexpected effect?
+. Int always rounds
+. Float is approximate
+. == vs .equals()
+. Inheritance
+. Break up code into components
+. Temporary variables
+
+Too Stuck:
+. No computer >:(
+. Chill out
+. Get help
+. Hire duckies
+. Understand bugs, learn bugs, kill future bugs
