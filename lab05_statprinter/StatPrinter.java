@@ -66,14 +66,14 @@ public class StatPrinter
   //  _frequency would be [0,0,3,2,0,1]
   public StatPrinter( ArrayList <Integer> data )
   {
-    _frequency = new ArrayList <Integer> (max(data) + 1);
-    for (int i = 0; i < _frequency.size(); i++){
+    _frequency = new ArrayList <Integer> ();
+    for (int i = 0; i <max(data) + 1; i++){
       int amount = 0;
       for(int j = 0; j < data.size(); j++){
       if (data.get(j) == i) {
         amount++;      }
       }
-      _frequency.set(i, amount);
+      _frequency.add(amount);
     }
   }
 
@@ -92,7 +92,7 @@ public class StatPrinter
       return max;
   }
 
-/**
+
   //*************** QUESTION 03 **************************
   //postcond: returns true if i > 0 and i < _frequency.size() - 1
   //          and _frequency.get( i - 1 ) < _frequency.get( i )
@@ -105,14 +105,18 @@ public class StatPrinter
   //    isLocalMode(5) -> true
    public boolean isLocalMode( int i )
   {
-
+    boolean isLocalMode = false;
+    if (i > 0 && i < _frequency.size() - 1 && _frequency.get( i - 1 ) < _frequency.get( i ) && _frequency.get( i + 1 ) < _frequency.get( i )){
+      isLocalMode = true;
+    }
+    return isLocalMode;
   }
 
 
   //*************** QUESTION 04 **************************
   //postcond: returns list of modes in _frequency
-  public ArrayList<Integer> getLocalModes()
-  {
+  //public ArrayList<Integer> getLocalModes()
+  //{
     /* YOUR IMPLEMENTATION HERE */
 
   //}
