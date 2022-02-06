@@ -1,9 +1,10 @@
-// Clyde "Thluffy" Sinclair
-// APCS pd0
+// Great, Nice Jingles: Julia Kozak, Gloria Lee, Nafiz Labib (Flopsy, Flounder, Martha)
+// APCS pd08
 // L05 -- pulling it together
-// 2022-02-03r
-// time spent:  hrs
+// 2022-02-03
+// time spent: 1.5 hrs
 
+// Note: Big O run times are in notes.txt!
 
 /**
    An AP-style question, for practice...
@@ -61,21 +62,24 @@ public class StatPrinter
   //*************** QUESTION 02 **************************
   //precond:  data.size() > 0, each entry b/t 0,100 inclusive
   //postcond: _frequency.size() set to max(data) + 1
-  //          _frequency.get(i) returns frequeny of i in data
+  //          _frequency.get(i) returns frequency of i in data
   //eg, for data [2,3,2,5,2,3]
   //  _frequency would be [0,0,3,2,0,1]
   public StatPrinter( ArrayList <Integer> data )
   {
-    _frequency = new ArrayList <Integer> ();
-    for (int i = 0; i <max(data) + 1; i++){
+    _frequency = new ArrayList<Integer>();
+    for (int i=0; i<max(data)+1; i++) {
       int amount = 0;
-      for(int j = 0; j < data.size(); j++){
-      if (data.get(j) == i) {
-        amount++;      }
+      for (int j=0; j<data.size(); j++) {
+        if (data.get(j) == i) {
+          amount++;
+        }
       }
       _frequency.add(amount);
     }
   }
+  //RUNTIME COMPLEXITY: n^2
+  //REASONING: There are 2 for loops, meaning that there's iteration through the array for each element of the original ArrayList, so it's similar to a quadratic.
 
 
   //*************** QUESTION 01 **************************
@@ -83,14 +87,16 @@ public class StatPrinter
   //postcond: returns largest integer in data
   public Integer max( ArrayList <Integer> data )
   {
-   Integer max = data.get(0);
-      for (int i = 1; i < data.size(); i++){
-        if (data.get(i) > max){
-          max = data.get(i);
-        }
+    Integer max = data.get(0);
+    for (int i = 1; i < data.size(); i++){
+      if (data.get(i) > max){
+        max = data.get(i);
       }
-      return max;
+    }
+    return max;
   }
+  //RUNTIME COMPLEXITY: n
+  //REASONING: The amount of time this takes will depend on the number of elements in ArrayList data (linear).
 
 
   //*************** QUESTION 03 **************************
@@ -99,33 +105,58 @@ public class StatPrinter
   //          and _frequency.get( i + 1 ) < _frequency.get( i )
   //          Otherwise, returns false
   //eg, for _frequency [1,2,1,5,5,8,2,4]
-  //    2 and 8 are local modes,so
+  //    2 and 8 are local modes, so
   //    isLocalMode(0) -> false
   //    isLocalMode(1) -> true
   //    isLocalMode(5) -> true
-   public boolean isLocalMode( int i )
+  public boolean isLocalMode( int i )
   {
-    boolean isLocalMode = false;
-    if (i > 0 && i < _frequency.size() - 1 && _frequency.get( i - 1 ) < _frequency.get( i ) && _frequency.get( i + 1 ) < _frequency.get( i )){
-      isLocalMode = true;
+    if (i == 0 || i == _frequency.size()-1) {
+      return false;
+    } else {
+      if (_frequency.get(i-1) < _frequency.get(i) && _frequency.get(i+1) < _frequency.get(i)) {
+        return true;
+      } else {
+        return false;
+      }
     }
-    return isLocalMode;
   }
+  //RUNTIME COMPLEXITY: n
+  //REASONING: The amount of time this takes will depend on the number of elements in ArrayList _frequency (linear).
 
 
   //*************** QUESTION 04 **************************
   //postcond: returns list of modes in _frequency
-  //public ArrayList<Integer> getLocalModes()
-  //{
-    /* YOUR IMPLEMENTATION HERE */
+  public ArrayList<Integer> getLocalModes()
+  {
+    ArrayList<Integer> ret = new ArrayList<Integer>();
+    for (int i=0; i<_frequency.size(); i++) {
+      if (isLocalMode(i)) {
+        ret.add(i);
+      }
+    }
+    return ret;
+  }
+  //RUNTIME COMPLEXITY: n
+  //REASONING: The amount of time this takes will depend on the number of elements in our _frequency ArrayList.
 
-  //}
 
   //*************** QUESTION 05 **************************
   //precond:  longestBar > 0
-  //public void printHistogram( int longestBar )
-  //{
-    /* YOUR IMPLEMENTATION HERE */
-  //}
+  public void printHistogram( int longestBar )
+  {
+    int max = max(_frequency);
+    double ratio = (double)longestBar / max;
+    for (int i=0; i<_frequency.size(); i++) {
+      int numStars = (int)(_frequency.get(i) * ratio);
+      System.out.print(i + " : ");
+      for (int j=0; j<numStars; j++) {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+  }
+//RUNTIME COMPLEXITY: n
+//REASONING: The amount of time this takes will depend on the number of elements in our _frequency ArrayList.
 
 }//end class StatPrinter
