@@ -121,9 +121,8 @@ public class StatPrinter
       }
     }
   }
-  //RUNTIME COMPLEXITY: n
-  //REASONING: The amount of time this takes will depend on the number of elements in ArrayList _frequency (linear).
-
+  //RUNTIME COMPLEXITY: 1
+  //REASONING: Because the method searches at a specific index, length of ArrayList doesn't affect runtime.
 
   //*************** QUESTION 04 **************************
   //postcond: returns list of modes in _frequency
@@ -138,7 +137,7 @@ public class StatPrinter
     return ret;
   }
   //RUNTIME COMPLEXITY: n
-  //REASONING: The amount of time this takes will depend on the number of elements in our _frequency ArrayList.
+  //REASONING: The amount of time this takes will depend on the number of elements in ArrayList _frequency (linear).
 
 
   //*************** QUESTION 05 **************************
