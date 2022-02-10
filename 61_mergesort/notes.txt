@@ -1,0 +1,26 @@
+// Great, Nice Jingles: Julia Kozak, Gloria Lee, Nafiz Labib (Flopsy, Flounder, Martha)
+// APCS pd08
+// HW60: A Termite is-a Turtle, a Thinker is-a Turtle
+// 2022-02-07
+// time spent: 0.5 hours
+
+DISCO -
+- What we did in class with the cards is the merge sort method we discussed (with human problems).
+- The algorithm carried out in class is recursive, because the method repeats until people receive only 1 card, which would be the base method for sorting.
+- Adding on to the 1 card, a 1-item list is already sorted.
+- Since the one card is already sorted, you give that one card back to sender because it's already sorted.
+- Runtime complexity (big O) is O(nlogn). This is the first time we've (or at least I have) looked at this in class.
+  + Dividing decks into halves until one card in left in each deck follows the pattern of log(2n). Comparing cards in two decks and placing them into one list follows a pattern of n. Multiply those, remove those constants, and you get nlog(n).    
+  + Mathematically, this is similar to a doubling pattern, but not quite. I looked at the burning trash known as the Internet for more info, apparently this is called a Quasilinear function, which makes sense.
+
+QCC -
+- Are there other specifications for splitting decks when you receive odd-numbered decks >1?
+- Does comparing first elements of lists and adding them to one list take more time than halving lists? (I'm guessing it does, because n > log(2n))
+
+THINKER FRAMWARE -
+- Receive deck. If deck has >1 card, split into halves and give away decks. If deck has =1 card, give it back to sender, as the list is sorted.
+- If you receive two decks, compare first elements of both lists. Whichever one is lower will be the first element of the newly formed deck.
+- The deck which the card has been removed will shorten the list, moving the elements down.
+- If one deck has no more cards, put the rest of the cards from the other deck into the newly formed deck in the order they were originally in.
+- Once you finally have one list, return deck to sender.
+- Rinse, wash repeat, until there is only 1 person holding one deck.
