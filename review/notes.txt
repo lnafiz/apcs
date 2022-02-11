@@ -1,0 +1,29 @@
+// Great, Nice Jingles: Julia Kozak, Gloria Lee, Nafiz Labib (Flopsy, Flounder, Martha)
+// APCS pd08
+// HW63: Read, Review, Expand
+// 2022-02-10
+// time spent:1 hr
+
+|----------ACTIVITY--1-----------|
+1a. public static double sentimentVal( String word )
+1b. This method requires a String parameter. If you try to use any other type, it will return 0.
+1c. The method has a return type, which is double.
+
+2.  Method Call               Return value
+    sentimentVal("great")       1.48
+    sentimentVal("fantastic")   0.45
+    sentimentVal("somber")      0.08
+
+3a. This would work because the new variable's type is the same as sentimentVal's return type.
+3b. This would NOT work because the new variable's type is different from sentimentVal's return type.
+3b. This would work because the new variable's type is the same as sentimentVal's return type.
+
+|----------ACTIVITY--2-----------|
+4. The input of totalSentiment is a text file. In the text file, you use split to remove spaces and put each word in an array. Then, the for loop removes punctuation, since they have no sentiment value.
+Finally, all the sentiment values of the words are added together to give a total sentiment value.
+5a. The ratings don't make sense at all. I had 2 positive reviews and a negative review, but one was 2 stars while the other two were 1 stars. This doesn't make sense, the positive reviews should have more stars.
+totalSentiment is based on review length, so if they're short, they'll still seem like negative reviews.
+5b. One way would be to simply change the values that determine the number of stars. Another way would be to do something like making ratios based on the length of the review, and applying that to our star rating values.
+If the review is very short but is positive, then the ratio can adjust the star rating values to be much lower so that the positive review won't have less stars.
+6a. The else if statements are in the wrong order. If the total rating is less than 15 points, then the stars will always be 4. If they're greater, they'll always be 0 stars. Both of these don't make sense logically.
+6b. To fix, just rearrange the order of the else if statements in ascending order, with the 0 star else if statement at the top, and the final statement being an else statement for 5 stars.

@@ -193,6 +193,14 @@ public class Review {
     System.out.println(sentimentVal("great"));
     System.out.println(sentimentVal("fantastic"));
     System.out.println(sentimentVal("somber"));
+    System.out.println(totalSentiment("SimpleReview.txt"));
+    System.out.println(starRating("SimpleReview.txt"));
+    System.out.println(totalSentiment("SimpleReview2.txt"));
+    System.out.println(starRating("SimpleReview2.txt"));
+    System.out.println(totalSentiment("SimpleReview3.txt"));
+    System.out.println(starRating("SimpleReview3.txt"));
+
+
   }
 
 }
