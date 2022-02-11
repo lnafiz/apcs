@@ -27,3 +27,9 @@ totalSentiment is based on review length, so if they're short, they'll still see
 If the review is very short but is positive, then the ratio can adjust the star rating values to be much lower so that the positive review won't have less stars.
 6a. The else if statements are in the wrong order. If the total rating is less than 15 points, then the stars will always be 4. If they're greater, they'll always be 0 stars. Both of these don't make sense logically.
 6b. To fix, just rearrange the order of the else if statements in ascending order, with the 0 star else if statement at the top, and the final statement being an else statement for 5 stars.
+
+|----------ACTIVITY--3-----------|
+3. indexOf finds the first appearance of a given String input within an array. Substring returns any String that appears between two specified indices of an array.
+indexOf can be used to identify string you want in one part, and substring can be used to return that string. This way, a string can be divided into two.
+It's necessary to add the space one position after because you don't want to include the space within the condensed array of String.
+5.
