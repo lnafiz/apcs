@@ -189,19 +189,36 @@ public class Review {
         }
       }
 
-  public static String fakeReview (String fileName){
+    public static String fakeReview(String fileName) {
     String fakeRev = "";
-    String textToString = textToString(filename);
-    String wordArray = textToString.split("");
-    for (int i = 0; i < wordArray.length(); i++){
-      String word = i.substring(0, i.length);
-      if (word.indexOf(*) != -1){
-        word = word.substring(1, word.length);
-          }
-    fakeRev += word;
-        }
-    return fakeRev;    
-      }
+    String textToString = textToString(fileName);
+    String[] words = textToString.split(" ");
+    for (int i=0; i<words.length; i++) {
+      if (words[i].substring(0, 1).equals("*")) {
+        String adj = removePunctuation(words[i]);
+	       if (totalSentiment(fileName) >= 0) {
+	          if (sentimentVal(adj) < 0) {
+	             words[i] = randomPositiveAdj() + getPunctuation(words[i]);
+	            } //end if adj
+              else {
+	             words[i] = words[i].substring(1);
+	            } //end else
+	          } //end fileName
+            else {
+	             if (sentimentVal(adj) >= 0) {
+	                words[i] = randomNegativeAdj() + getPunctuation(words[i]);
+	              }//end if adj
+                  else {
+	                 words[i] = words[i].substring(1);
+	               }//end else words[i]
+	             }// end else totalSentiment < 0
+             }// end first if
+           }// end for loop (so many brackets!!!)
+    for (String a : words) {
+      fakeRev += a + " ";
+    }
+    return fakeRev;
+  }
 
 
   public static void main(String [] args){

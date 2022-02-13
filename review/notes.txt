@@ -32,4 +32,14 @@ If the review is very short but is positive, then the ratio can adjust the star 
 3. indexOf finds the first appearance of a given String input within an array. Substring returns any String that appears between two specified indices of an array.
 indexOf can be used to identify string you want in one part, and substring can be used to return that string. This way, a string can be divided into two.
 It's necessary to add the space one position after because you don't want to include the space within the condensed array of String.
-5.
+5. A static method is a method that belongs to a class, but it does not belong to an instance of that class and this method can be called without the instance or object of that class.
+Non-static methods can access any static method and static variable, without creating an instance of the object.
+6. Right now, only random adjectives are used. If we check the sentimentValue of the adjective, we can replace it with adjectives of corresponding value (positive with positive, negative with negative).
+
+|----------ACTIVITY--4-----------|
+1. Possible to balance reviews, since too many good reviews makes a product seem too good to be true.
+2. Make a product look better than it actually might be, since more reviews will testify to its worth.
+3. The new code should directly check sentimentValues, and focus on replacing adjectives present with stronger variants of those. For example, replacing "bad" with "horrible".
+5. It returns neWord (original String without the first character o).
+6. The sentimentValue method checks adjectives with words from the .csv file, which don't contain the * with the words, so they have to be removed.
+7. Replacing adjectives with adjectives that have sentimentValues near 1 or near -1 on the .csv file.
