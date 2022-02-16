@@ -42,12 +42,11 @@ public class QueenBoard
         if (_board[i][col] == 0){
           addqueen(i, col);
         }
-        toString();
         removeQueen(i, col);
       }
     }
     else{
-      if(solveH(col - 1)== true){
+      if(solveH(col + 1)== true){
         for (int i = 0; i < _board.length; i++){
           if (_board[i][col] == 0){
             addqueen(i, col);
