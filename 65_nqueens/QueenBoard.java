@@ -1,3 +1,8 @@
+// Great, Nice Jingles: Julia Kozak, Nafiz Labib, Gloria Lee (Flopsy, Martha, Flounder)
+// APCS pd08
+// HW65: How Many Queens Can a Thinker Place, If a Thinker Can Place Queens…
+// 2022-02-17
+
 /***
  * class QueenBoard
  * Generates solutions for N-Queens problem.
@@ -27,8 +32,7 @@ public class QueenBoard
    */
   public boolean solve()
   {
-
-    return false;
+    return solveH(0);
   }
 
 
@@ -37,30 +41,46 @@ public class QueenBoard
    */
   private boolean solveH( int col )
   {
-    if (col = _board.length - 1){
-      for (int i = 0; i < _board.length; i++){
-        if (_board[i][col] == 0){
-          addqueen(i, col);
+    if (col >= _board.length) {
+      printSolution();
+      for (int i=0; i<_board.length; i++) {
+        for (int j=0; j<_board.length; j++) {
+          _board[i][j] = 0;
         }
-        removeQueen(i, col);
       }
-    }
-    else{
-      if(solveH(col + 1)== true){
-        for (int i = 0; i < _board.length; i++){
-          if (_board[i][col] == 0){
-            addqueen(i, col);
+      return true;
+    } else {
+      int solCtr = 0;
+      for (int i=0; i<_board.length; i++) {
+        if (_board[i][col] == 0) {
+          addQueen(i, col);
+          if (solveH(col+1)) {
+            removeQueen(i, col);
+            return true;
           }
           removeQueen(i, col);
+
         }
       }
+      return false;
     }
-    return false;
   }
 
 
   public void printSolution()
   {
+    String ans = "";
+    for (int i=0; i<_board.length; i++) {
+      for (int j=0; j<_board.length; j++) {
+        if (_board[i][j] != 1) {
+          ans += "_\t";
+        } else {
+          ans += "Q\t";
+        }
+      }
+      ans += "\n";
+    }
+    System.out.println(ans);
     /** Print board, a la toString...
         Except:
         all negs and 0's replaced with underscore
@@ -73,12 +93,9 @@ public class QueenBoard
   //================= YE OLDE SEPARATOR =================
 
   /***
-   * <General description>
-   * precondition:
-   There are no other queens in the same row or column.
-
-   * postcondition:
-    If a square is not attacked, the queen is placed on inputted row and column.
+   * Given that this square is not attacked and has no Queen on it, this method will add a Queen and mark the squares it attacks (only those in the columns to the right of it)
+   * precondition: There are no other queens in the same row or column.
+   * postcondition: If a square is not attacked, the queen is placed on inputted row and column.
    */
   private boolean addQueen(int row, int col)
   {
@@ -102,11 +119,9 @@ public class QueenBoard
 
 
   /***
-   * <General description>
-   * precondition:
-   There is at least one other queen in the same row or column.
-   * postcondition:
-    The queen is removed from inputted row and column.
+   * Given that a Queen is on a square, this method will remove it and unmark all squares it attacked
+   * precondition: There is a Queen at the given square.
+   * postcondition: The queen is removed from inputted row and column.
    */
   private boolean removeQueen(int row, int col){
     if ( _board[row][col] != 1 ) {
@@ -130,11 +145,9 @@ public class QueenBoard
 
 
   /***
-   * <General description>
-   * precondition:
-   an int[][] exists
-   * postcondition:
-   converts all values i every index and array to String output.
+   * toString for printing the values that show up in each slot of the _board 2D array
+   * precondition: board[][] of the instance has defined values
+   * postcondition: returns a String form of the board displaying rows, columns
    */
   public String  toString()
   {
@@ -152,8 +165,15 @@ public class QueenBoard
   //main method for testing...
   public static void main( String[] args )
   {
-    QueenBoard b = new QueenBoard(5);
-    System.out.println(b);
+    QueenBoard two = new QueenBoard(2);
+    QueenBoard three = new QueenBoard(3);
+    QueenBoard four = new QueenBoard(4);
+    QueenBoard five = new QueenBoard(5);
+
+    QueenBoard f6 = new QueenBoard(8);
+    QueenBoard f7 = new QueenBoard(13);
+    QueenBoard f8 = new QueenBoard(21);
+    //System.out.println(b);
     /** should be...
        0	0	0	0	0
        0	0	0	0	0
@@ -162,9 +182,9 @@ public class QueenBoard
        0	0	0	0	0
     */
 
-    b.addQueen(3,0);
-    b.addQueen(0,1);
-    System.out.println(b);
+    //b.addQueen(3,0);
+    //b.addQueen(0,1);
+    //System.out.println(b);
     /** should be...
        0	1	-1	-2	-1
        0	0	-2	0	0
@@ -173,8 +193,8 @@ public class QueenBoard
        0	-1	0	0	0
     */
 
-    b.removeQueen(3,0);
-    System.out.println(b);
+    //b.removeQueen(3,0);
+    //System.out.println(b);
     /** should be...
        0	1	-1	-1	-1
        0	0	-1	0	0
@@ -182,6 +202,16 @@ public class QueenBoard
        0	0	0	0	-1
        0	0	0	0	0
     */
+
+    System.out.println(two.solve());
+    System.out.println(three.solve());
+
+    System.out.println(four.solve());
+    System.out.println(five.solve());
+    System.out.println(f6.solve());
+    System.out.println(f7.solve());
+    System.out.println(f8.solve());
+
 
   }
 
