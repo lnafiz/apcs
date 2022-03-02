@@ -1,8 +1,8 @@
-// Clyde Sinclair
-// APCS pd0
-// HW68 -- recursively probing for a closed cycle
-// 2022-02-28m
-// time spent:  hrs
+// Great, Nice Jingles: Julia Kozak, Gloria Lee, Nafiz Labib (Flopsy, Flounder, Martha)
+// APCS pd08
+// HW68 -- ...and T-, Tr-, Tri-, Tries Again Until It's Done
+// 2022-03-01
+// time spent:  0.75 hrs
 
 /***
  * SKELETON
