@@ -1,3 +1,11 @@
+Team Nice Lovely Algorithm: Nafiz Labib, Lauren Lee, Alif Rahman
+APCS pd 06
+HW 69 - Making Sense
+2022-03-02
+time spent: 0.5 hrs
+
+
+
 1.
       q0: From any starting position, can an open tour always be found? Explain.
         An open knight tour can't be found at every starting position. The simplest explanation is that at some squares, there simply isn't a knight's tour found.
