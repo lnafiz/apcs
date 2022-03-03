@@ -59,7 +59,8 @@ public class KnightTour
 
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     //for fixed starting location, use line below:
-    tf.findTour( 2, 2, 1 );
+    //tf.findTour( 2, 2, 1 );
+    tf.findTour( 2, 3, 1 );
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -72,6 +73,7 @@ public class KnightTour
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // PUSHING FARTHER...
     // Systematically attempt to solve from every position on the board?
+
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   }//end main()
@@ -184,7 +186,7 @@ class TourFinder
 
       System.out.println( this ); //refresh screen
 
-      delay(1000); //uncomment to slow down enough to view
+      //delay(1000); //uncomment to slow down enough to view
 
       /******************************************
        * Recursively try to "solve" (find a tour) from
@@ -208,7 +210,7 @@ class TourFinder
       //If made it this far, path did not lead to tour, so back up...
       // (Overwrite number at this cell with a 0.)
       _board[x][y] = 0;
-      delay(100);
+      //delay(100);
       System.out.println( this ); //refresh screen
     }
   }//end findTour()
