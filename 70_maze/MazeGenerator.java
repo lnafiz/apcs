@@ -37,7 +37,8 @@ h+1
 
     for( int i=1; i<sideh; i++){
         for (int n=1; n<sidew; n++){
-            if (_maze[i][n] == PATH && _maze[i+1][n] == WALL && _maze[i][n+1] == WALL && _maze[i-1][n] == WALL && _maze[i][n-1] == WALL){
+          if (_maze[i][n] == PATH)
+            if ((_maze[i+1][n] == WALL && _maze[i-1][n] == WALL) || (_maze[i][n+1] == WALL && _maze[i][n-1] == WALL)){
               _maze[i][n] = WALL;
             }
         }
