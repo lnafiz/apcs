@@ -1,47 +1,42 @@
 // Team Not Gonna Lie (Nafiz Labib, Gabriel Thompson, Lauren Lee)
 // APCS pd8
-// HW73 -- All About the About Face
-// 2022-03-09w
+//HW72 -- QuickSort
+//2022-03-09w
 //time spent: 0.9h
 
 /***
- * ALGO
- *  1. From the known sorted index, partition the array
- *  2. If the known sorted index is the number that we're looking for, return that.
- *  3. If the known sorted index is less than the number we're looking for...
- *     -> The known sorted index to the right bound will contain the number we're looking for,
- *        so partition from the sorted index to the right bound
- *  4. If the known sorted index is more than the number we're lookin for...
- *     -> The left bound to the known sorted index will contain the number we're looking for, so
- *        partition from the left bound to the sorted index
+ * class QuickSort
+ * Implements quicksort algo to sort an array of ints in place
  *
- * BEST CASE SCENARIO
- *  -> The middle number is the item we're searching for
- *  -> Complexity: O(n), because it runs the partition function once, then instantly ends the process
- *
- * WORST CASE SCENARIO
- *  -> The first or last number is the item we're searching for
- *  -> Complexity: O(n log n), because the partition function runs in O(n) time, and gets called on
- *     the order of O(log n) times, because the size of the array being handled roughly halves in
- *     each function call
- *
- * DISCO
- *  -> When we call a method in an if statement, the method will be called
- *  -> Calling the partition() function multiple times changed our result
- *
- * QCC
- *  -> Both this algorithm and merge sort run in O(n log n) time. Which is preferable? Does Java
- *     use either of this?
- *  -> What is this algorithm called? How quickly can it sort?
- *
- ***/
+ * 1. Summary of QuickSort algorithm:
+ * QSort(arr):
+ *  If the left index is at or larger than the right index, then
+ return because then we can conclude that the partition has been sorted
+ *  If left is not greater than or equal to the right, we don't know that the partition is sorted yet so we parition the array and sort the left and right parititions.
+ * 2a. Worst pivot choice and associated run time:
+ *  The worst pivot choise is the left or right bound because in the worst case scenario of the array in decreasing order, the run time classification would be O(n^2)
+ * 2b. Best pivot choice and associated run time:
+ *  The best pivot choice on average is the middle value between left and right because in the worst case scenario of descreasing order, every time we run the partition method, we would be decreasing the part of the array we are focusing on by 1/2. The runtime would be O(nlogn)
+ * 3. Approach to handling duplicate values in array:
+ * If we are considering quick select in the context of index to find the yth smallest element, we don't need to change how we select our yth element
+(ie, {2, 3, 4, 4, 5, 7, 7, 8}, the fourth smallest element is four)
+ * If we are considering quick select in the context that we are trying to find the smallest distict value...
+(ie, {2, 3, 4, 4, 5, 7, 7, 8}, the fourth smallest element is five)
+We would remove duplicates and then run quickselect on the array.
+ **/
+ /**
 
-import java.util.Arrays;
+ DISCO:
+ * Increasing the sizes of the arrays in our test cases give us a better understanding of runtime rather than sticking w a smaller array size. 
+ *
+ QCC
+ * is the algorithm really O(nlogn) because in each method call of the quick sort helper, it will call partition twice and partition has a run time of O(n).
+ * for quick select, are we finding the yth smallest element based on the index or distinct elements?
+ **/
 
-public class QuickSelect
+public class QuickSort
 {
   public static int counter = 0;
-
   //--------------v  HELPER METHODS  v--------------
   //swap values at indices x, y in array o
   public static void swap( int x, int y, int[] o )
@@ -82,6 +77,30 @@ public class QuickSelect
   //--------------^  HELPER METHODS  ^--------------
 
 
+
+
+  /**
+   * void qsort(int[])
+   * @param d -- array of ints to be sorted in place
+   */
+  public static void qsort( int[] d )
+  {
+    counter = 0;
+    qsortHelper(d, 0, d.length-1);
+    System.out.println(counter);
+  }
+
+  public static void qsortHelper(int arr[], int left, int right){
+    counter ++;
+    if (left >= right){
+      return;
+    } else{
+      int s = partition(arr, left, right);
+      qsortHelper(arr, left, s-1);
+      qsortHelper(arr, s+1, right);
+    }
+  }
+
   public static int partition( int arr[], int left, int right)
   {
     int pivot = (left+right)/2;
@@ -99,48 +118,105 @@ public class QuickSelect
 
     return storePos;
   }//end partition
+  //you may need a helper method...
 
-  public static int QuickSelect( int arr[], int y ) {
-    counter = 0;
-    return QuickSelectHelper(arr, 0, arr.length - 1, arr.length / 2, y);
-  }
 
-  public static int QuickSelectHelper( int arr[], int left, int right, int y ) {
-    counter++;
-    int result = partition(arr, left, right);
 
-    if (result == y - 1) {
-      return arr[y - 1];
-    }
 
-    if (result < y - 1) {
-      return QuickSelectHelper(arr, result + 1, right, y);
-    } else {
-      return QuickSelectHelper(arr, left, result - 1, y);
-    }
-  }
 
   //main method for testing
   public static void main( String[] args )
   {
-    int[] arr1 = {8,21,17,69,343};
-    int[] arr2 = {1,28,33,4982,37};
-    int[] arr3 = {5,4,17,9000,6};
-    int[] arr4 = {3,0,16,599,1024};
+    /*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y)
 
-    System.out.println(QuickSelect(arr1, 1) + " ...should be 8");
-    System.out.println(QuickSelect(arr1, 2) + " ...should be 17");
-    System.out.println(QuickSelect(arr1, 3) + " ...should be 21");
-    System.out.println(QuickSelect(arr1, 4) + " ...should be 69");
-    System.out.println(QuickSelect(arr1, 5) + " ...should be 343");
+    //get-it-up-and-running, static test case:
+    */
+    int [] arr1 = {7,1,5,12,3};
+    System.out.println("\narr1 init'd to: " );
+    printArr(arr1);
 
-    System.out.println("\nWORST CASE:");
-    System.out.println(QuickSelect(arr2, 4) + " ...should be 37");
-    System.out.println("# of function calls: " + counter);
+    qsort( arr1 );
+    System.out.println("arr1 after qsort: " );
+    printArr(arr1);
 
-    System.out.println("\nBEST CASE:");
-    System.out.println(QuickSelect(arr2, 3) + " ...should be 33");
-    System.out.println("# of function calls: " + counter);
+    // randomly-generated arrays of n distinct vals
+    int[] arrN = new int[10];
+    for( int i = 0; i < arrN.length; i++ )
+    arrN[i] = i;
+
+    System.out.println("\narrN init'd to: " );
+    printArr(arrN);
+
+    shuffle(arrN);
+    System.out.println("arrN post-shuffle: " );
+    printArr(arrN);
+
+    qsort( arrN );
+    System.out.println("arrN after sort: " );
+    printArr(arrN);
+    /*
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+    /*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y)
+    */
+
+    //get-it-up-and-running, static test case w/ dupes:
+    int [] arr2 = {7,1,5,12,3,7};
+    System.out.println("\narr2 init'd to: " );
+    printArr(arr2);
+
+    qsort( arr2 );
+    System.out.println("arr2 after qsort: " );
+    printArr(arr2);
+
+
+    // arrays of randomly generated ints
+    int[] arrMatey = new int[20];
+    for( int i = 0; i < arrMatey.length; i++ )
+    arrMatey[i] = (int)( 48 * Math.random() );
+
+    System.out.println("\narrMatey init'd to: " );
+    printArr(arrMatey);
+
+    shuffle(arrMatey);
+    System.out.println("arrMatey post-shuffle: " );
+    printArr(arrMatey);
+
+    qsort( arrMatey );
+    System.out.println("arrMatey after sort: " );
+    printArr(arrMatey);
+    /*
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+    //(hypothesis)best case
+    int [] best = new int[100];
+    for( int i = 0; i < best.length; i++ )
+    best[i] = i+1;
+    qsort(best);
+    printArr(best);
+    //in array length of 10 -- 13 function calls
+    // in array length of 100 -- took 127 function calls
+
+    //(hypothesis)worst case
+    int [] worst  = new int[100];
+    for( int i = 0; i < worst.length; i++ )
+    worst[i] = 100-(i+1);
+    qsort(worst);
+    printArr(worst);
+    //in array length of 10 -- 13 function calls
+    // in array length of 100 -- took 129 function calls
+
+    int[] rand = new int[100];
+    for( int i = 0; i < rand.length; i++ )
+    rand[i] = (int)( 100 * Math.random() )+1;
+    printArr(rand);
+    qsort(rand);
+    printArr(rand);
+    //in array length of 10 -- 15 function calls
+    // in array length of 100 -- took 129 function calls
+
+    // conclusion -- there isn't a best or worst case
   }//end main
 
-}//end class Mysterion
+}//end class QuickSort
