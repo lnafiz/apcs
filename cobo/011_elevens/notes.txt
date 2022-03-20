@@ -14,3 +14,14 @@ L07 - But These Go Up To Eleven
 That means that ranks in the beginning should correspond to their value. For example, 2 in the beginning gets a value of 2, while a ace in the end gets a value of 11.
 
 --------Activity 3--------
+1.
+  public static String flip() {
+    if ((int) Math.random() * 3 > 1){
+    return "heads";
+    }
+    else{
+    return "tails";
+    }
+  }
+  1, 2, or 3 is generated. If it's 1, it's tails, otherwise, it's heads.
+2.
