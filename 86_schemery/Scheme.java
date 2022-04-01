@@ -3,12 +3,27 @@
  * Simulates a rudimentary Scheme interpreter
  *
  * ALGORITHM for EVALUATING A SCHEME EXPRESSION:
- *   1. Steal underpants.
- *   2. ...
- *   5. Profit!
+ Algorithm (that did not work for this skeleton):
+ Parsing right to left for subtraction purposes
+
+  - take the scheme expression as a string array and push each element in the corresponding stack
+    - take in closing parens and numbers to stack 2
+    - take operators in stack 1
+
+  - when met with a opening paren, perform the popped operation in stack 1 on the numbers in stack two until you reach a closing paren
+  - Push the resulting number into stack 2
+
+  - Continue pushing/popping/performing operations until you reach the end of the string array
+
+ RECURSIVE ALGO THAT DIDN'T GO THROUGH
+ BASE CASE:
+   Just one number : return that number
+ RECURSIVE CASE:
+   NOT just one number
+   Iterate through every argument of the operator, and call the function on that, and apply the operator to the result
  *
- * STACK OF CHOICE: ____ by ____
- * b/c ...
+ * STACK OF CHOICE: llStack by Mykolyk
+ * b/c we wanted to become more familiarized with LList because we are still unsure about it.
  **/
 
 public class Scheme
@@ -36,7 +51,7 @@ public class Scheme
 
     //for loop to ensure all elements are accounted for
 
-    for (int i = 0; i <= noSpace.length - 1; i--){
+    for (int i = noSpace.length-1; i >= 0; i--){
       //assigning everything as a String variable as we go through expression
       String item = noSpace[i];
 
@@ -46,7 +61,7 @@ public class Scheme
       }
 
       //commencing solving once we get a )
-      else if(item.equals(")")) {
+      else if(item.equals("(")) {
         int popped = ops.pop();
         nums.push(unload(popped, nums));
       }
@@ -76,17 +91,20 @@ public class Scheme
 
     //adding
     if (op == 1) {
-      unload += Integer.parseInt(numbers.pop());
+      while (!numbers.peekTop().equals(")"))
+        unload += Integer.parseInt(numbers.pop());
     }
     //subtracting
     if (op == 2) {
-      unload -= Integer.parseInt(numbers.pop());
+      while (!numbers.peekTop().equals(")"))
+        unload -= Integer.parseInt(numbers.pop());
     }
     //multiplying
     if (op == 3) {
-      unload *= Integer.parseInt(numbers.pop());
+      while (!numbers.peekTop().equals(")"))
+        unload *= Integer.parseInt(numbers.pop());
     }
-
+    numbers.pop();
     return Integer.toString(unload);
 
   }//end unload()
