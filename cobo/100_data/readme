@@ -7,10 +7,9 @@ data sets:
 
 To make a JAR available to runtime environment (JRE)...
 
-```
 $ javac -classpath .:path/to/sinbad.jar -d . Driver.java
-$ java -classpath .:path/tosinbad.jar Driver
-```
+$ java -classpath .:path/to/sinbad.jar Driver
 
-411 on sinbad 
+
+411 on sinbad  (xtra)
 https://berry-cs.github.io/sinbad/install-java
