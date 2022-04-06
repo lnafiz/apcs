@@ -1,22 +1,27 @@
-Nafiz Labib, Prattay Dey, Kartik Vanjani
+Team Mamba :: Nafiz Labib, Prattay Dey, Kartik Vanjani
 APCS
 Lab 08 - America's Next Top Data Scientist
 2022-04-05
-time spent: 1 hr
+time spent: 3.0 hr
 
 
 DISCO
-
+- Can get past .gitignore file using git add -f.
+- sinbad.jar is a library that allows you to connect, read, and process data.
+- Google recieves a combination of the information we give and the information they get based on the things we do on their engines.
 
 QCC
+- Can sinbad process a variety of data from different websites or is it only limited to this activity?
+- Are there any other libraries similar to sinbad, and why the name?
 
 
-<TNPG>'s CSV FLOW:
+<Team Mamba's CSV FLOW:
 <insert your description of your tools and workflow in creating, editing CSV files>
 
 
 TRUBZ
-<this lab involves using tools that are likely to introduce hiccups; log any troubleshooting issues here>
+- Had trouble connecting Welcome01 to sinbad library. Remembered that our .gitignore file automatically ignores .jar file when cloning folder from closet/library.   
+
 
 ------------Activity 1------------
 1. Netflix, Amazon, Google
@@ -66,4 +71,24 @@ TRUBZ
  8. How do we add more cereal variable types?
  9. Comparing between the data (i.e which cereal has more calories)
  10. create compare<insert variable> methods that would return true or false based on if first cereal chosen is greater than second one in any category.
+ 
+ ------------Activity 3------------
+1) The temperature at Atlanta, Hartsfield - Jackson Atlanta International Airport, GA is 69.0F
+
+2) Code: KLGA
+  The temperature at New York, La Guardia Airport, NY is 50.0F
+  
+4) 2876 weather stations in NY
+   
+5) You can sort the weather stations by their latitude.
+
+6) The southernmost station was Pago Pago, AS, Samoa.
+
+7) One question we can also answer is the northernmost weather station. 
+
+8) We can answer this in the same amount of code it took us to find the southernmost station. 
+
+
+
+
    
