@@ -1,8 +1,8 @@
-Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
+Nafiz Labib, Prattay Dey, Kartik Vanjani
 APCS
-LAB08 --
+Lab 08 - America's Next Top Data Scientist
 2022-04-05
-time spent: <elapsed time in hours, rounded to nearest tenth>
+time spent: 1 hr
 
 
 DISCO
@@ -17,3 +17,25 @@ QCC
 
 TRUBZ
 <this lab involves using tools that are likely to introduce hiccups; log any troubleshooting issues here>
+
+------------Activity 1------------
+1. Netflix, Amazon, Google
+2. Google: Personal information like name and provided photo, information about browsers we visit, search terms we input into Google
+3. Delimit means "to fix or define the limits of". In data files, it's necessary because it allows us to incorporate as much data as we need.
+4. Most of the time, data in a column has some sort of a header to label what the column contains. You can also compare data within a column as find similarities to figure out what data is contained.
+5. Basketball and American football
+6.
+   Initial Consideration:
+   Question 1: Who is the GOAT (greatest of all time) of basketball?
+   Question 2: Who is the best running back currently in the NFL?
+
+   After Discussion:
+   Question 1: Which basketball player has contributed the most to the sport?
+   Question 2: Who is the greatest offensive player in football?
+ 7.
+ - https://www.kaggle.com/datasets/sumitrodatta/nba-aba-baa-stats NBA Stats (1947-Present)
+   This data table contains the stats of all players across 3 basketball associations that have played on terms of a professional contract from 1947 to current day.
+ - https://www.kaggle.com/datasets/zynicide/nfl-football-player-statsNFL Football Player Stats
+   This data table is similar to the previous one, containing stats of over 25k players that have played football professionally in the NFL. However, it is limited up to 2017, as it hasn't been updated since.
+
+   
