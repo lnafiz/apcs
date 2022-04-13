@@ -1,10 +1,16 @@
+// TNPG: NGL -- Nafiz Labib, Gabriel Thompson, Lauren Lee
+// APCS pd8
+// HW91: Deque the Halls
+// 2022-04-13
+// time spent: 0.3 hr
+
 import java.util.LinkedList;
 
-public class YourImplementationOfDeque<T> implements Deque<T>{
+public class NGL<T> implements Deque<T>{
 
   LinkedList deq;
 
-  public YourImplementationOfDeque(){
+  public NGL(){
     deq = new LinkedList<T>();
   }
 
@@ -35,22 +41,17 @@ public class YourImplementationOfDeque<T> implements Deque<T>{
     return (T) deq.getLast();
   }
 
-  public static void main(String[] args) {
-    YourImplementationOfDeque<String> q = new YourImplementationOfDeque<String>();
-    q.addFirst("There");
-    q.addFirst("Hello");
-    System.out.println(q.getFirst()); // "Hello"
-    System.out.println(q.getLast()); // "There"
-    q.addLast("Fellow");
-    q.addLast("Human");
-    q.removeFirst();
-    q.removeLast();
-    System.out.println(q.isEmpty());   // false
-    System.out.println(q.getFirst()); // "There"
-    System.out.println(q.getLast()); // "Fellow"
-    q.removeFirst();
-    q.removeLast();
-    System.out.println(q.isEmpty());   // true
+  public T pollFirst(){
+    if (deq.isEmpty()){
+      return null;
+    }
+    return (T) deq.removeFirst();
   }
 
+  public T pollLast(){
+    if (deq.isEmpty()){
+      return null;
+    }
+    return (T) deq.removeLast();
+  }
 }

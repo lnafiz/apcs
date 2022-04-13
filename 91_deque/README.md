@@ -1,9 +1,9 @@
 ```
 TNPG: NGL -- Nafiz Labib, Gabriel Thompson, Lauren Lee
-APCS
-HW90: Swabbing the Deque
-2022-04-12
-time spent: 0.5 hr
+APCS pd8
+HW91: Deque the Halls
+2022-04-13
+time spent: 0.3 hr
 ```
 Plan:
 1) Write interface with all methods
@@ -12,4 +12,5 @@ Plan:
   - peek (first and last)
   - remove (first and last)
   - add (first and last)
+  - poll (first and last)
 3) Enjoy
