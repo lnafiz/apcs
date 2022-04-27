@@ -1,0 +1,108 @@
+// Great, Nice Jingles: Julia Kozak, Gloria Lee, Nafiz Labib (Flopsy, Flounder, Martha)
+// APCS pd08
+// HW63: Read, Review, Expand
+// 2022-02-13
+// time spent:1 hr
+
+|----------ACTIVITY--1-----------|
+1a. public static double sentimentVal( String word )
+1b. This method requires a String parameter. If you try to use any other type, it will return 0.
+1c. The method has a return type, which is double.
+
+2.  Method Call               Return value
+    sentimentVal("great")       1.48
+    sentimentVal("fantastic")   0.45
+    sentimentVal("somber")      0.08
+
+3a. This would work because the new variable's type is the same as sentimentVal's return type.
+3b. This would NOT work because the new variable's type is different from sentimentVal's return type.
+3b. This would work because the new variable's type is the same as sentimentVal's return type.
+
+|----------ACTIVITY--2-----------|
+4. The input of totalSentiment is a text file. In the text file, you use split to remove spaces and put each word in an array. Then, the for loop removes punctuation, since they have no sentiment value.
+Finally, all the sentiment values of the words are added together to give a total sentiment value.
+5a. The ratings don't make sense at all. I had 2 positive reviews and a negative review, but one was 2 stars while the other two were 1 stars. This doesn't make sense, the positive reviews should have more stars.
+totalSentiment is based on review length, so if they're short, they'll still seem like negative reviews.
+5b. One way would be to simply change the values that determine the number of stars. Another way would be to do something like making ratios based on the length of the review, and applying that to our star rating values.
+If the review is very short but is positive, then the ratio can adjust the star rating values to be much lower so that the positive review won't have less stars.
+6a. The else if statements are in the wrong order. If the total rating is less than 15 points, then the stars will always be 4. If they're greater, they'll always be 0 stars. Both of these don't make sense logically.
+6b. To fix, just rearrange the order of the else if statements in ascending order, with the 0 star else if statement at the top, and the final statement being an else statement for 5 stars.
+
+|----------ACTIVITY--3-----------|
+3. indexOf finds the first appearance of a given String input within an array. Substring returns any String that appears between two specified indices of an array.
+indexOf can be used to identify string you want in one part, and substring can be used to return that string. This way, a string can be divided into two.
+It's necessary to add the space one position after because you don't want to include the space within the condensed array of String.
+5. A static method is a method that belongs to a class, but it does not belong to an instance of that class and this method can be called without the instance or object of that class.
+Non-static methods can access any static method and static variable, without creating an instance of the object.
+6. Right now, only random adjectives are used. If we check the sentimentValue of the adjective, we can replace it with adjectives of corresponding value (positive with positive, negative with negative).
+
+|----------ACTIVITY--4-----------|
+1. Possible to balance reviews, since too many good reviews makes a product seem too good to be true.
+2. Make a product look better than it actually might be, since more reviews will testify to its worth.
+3. The new code should directly check sentimentValues, and focus on replacing adjectives present with stronger variants of those. For example, replacing "bad" with "horrible".
+5. It returns neWord (original String without the first character o).
+6. The sentimentValue method checks adjectives with words from the .csv file, which don't contain the * with the words, so they have to be removed.
+7. Replacing adjectives with adjectives that have sentimentValues near 1 or near -1 on the .csv file.
+
+
+|----------ACTIVITY--5-----------|
+1. It's interactive and implements a lot of the ideas from the lab activities. Also, Hangman is a pretty nice and simple game to try out.
+2. We planned out what methods we would need for each step, such as assigning a random word or processing a guess, and built each method
+   one by one and testing it with print statements.
+3. static boolean checkInput(String s) {
+  - This method takes a String that is whatever is input by the user, since the user will input either a letter or a guess. Since it wants
+  to ensure that the input is valid, it checks the length to make sure it is either a single character (length 1)
+  or a guess (length of the phrase). It is static because the methods are each being called in main independent of an instance, so it would
+  throw errors otherwise.
+4. static void checkWin(String s) {
+    if (s.toLowerCase().equals(guess.toLowerCase().substring(0, guess.length()-1))) {
+      win = true;
+    }
+  }
+  - toLowerCase(), equals(), substring(), and length() are being called here. toLowerCase() is returning each String involved in its lowercase form, so guesses aren't case sensitive. equals()
+5. One code segment that uses nested conditional statements or compound boolean expressions:
+
+    static boolean checkInput(String s) {
+      if (s.length() == 1 || s.length() == display.length()-1) {
+       return true;
+      } else {
+      return false;
+      }
+    }
+
+    Compound boolean expressions are used here. Another way to write this code to achieve the same result would be:
+
+    static boolean checkInput(String s) {
+      if(s.length == 1){
+        return true;
+      } else if( s.length() == display.length()-1) {
+        return true;
+      } else{
+        return false;
+      }
+    }
+
+6. One code segment that uses iteration:
+
+static void updateDisplayChar(String s) {
+    for (int i=0; i<display.length()-1; i++) {
+      if (guess.toLowerCase().substring(i, i+1).equals(s)) {
+        display = display.substring(0, i) + guess.substring(i, i+1) + display.substring(i+1);
+      }
+    }
+  }
+
+  This is a for loop that goes through each letter of your guess statement. Any letter that is correct will be part of the returned String display that appears on screen.
+
+  Another way to write this using another type of loop would be:
+
+
+  static void updateDisplayChar(String s){
+    int i = 0;
+    while(i<display.length()-1){
+      if (guess.toLowerCase().substring(i, i+1).equals(s)) {
+        display = display.substring(0, i) + guess.substring(i, i+1) + display.substring(i+1);
+      }
+      i++;
+    }
+  }
