@@ -8,11 +8,11 @@ public class Celebrity
 	/**
 	 * The clue to determine the celebrity
 	 */
-	
+	private String _clue;
 	/**
 	 * The answer or name of the celebrity.
 	 */
-	
+	private String _answer;
 	/**
 	 * Creates a Celebrity instance with the supplied answer and clue
 	 * @param answer
@@ -20,6 +20,8 @@ public class Celebrity
 	 */
 	public Celebrity(String answer, String clue)
 	{
+		_answer = answer;
+		_clue = clue;
 	}
 
 	/**
@@ -28,7 +30,7 @@ public class Celebrity
 	 */
 	public String getClue()
 	{
-		return null;
+		return _clue;
 	}
 
 	/**
@@ -37,7 +39,7 @@ public class Celebrity
 	 */
 	public String getAnswer()
 	{
-		return null;
+		return _answer;
 	}
 
 	/**
@@ -46,7 +48,7 @@ public class Celebrity
 	 */
 	public void setClue(String clue)
 	{
-		
+		_clue = clue;
 	}
 
 	/**
@@ -55,16 +57,26 @@ public class Celebrity
 	 */
 	public void setAnswer(String answer)
 	{
-		
+		_answer = answer;
 	}
-	
+
 	/**
 	 * Provides a String representation of the Celebrity.
 	 */
 	@Override
 	public String toString()
 	{
-		return null;
+		return _answer;
 	}
-	
+
+public static void main (String[] args){
+	Celebrity jebronLames = new Celebrity("Lebron James", "Played in NBA since 2003, has won 4 championships, argued as the G.O.A.T of basketball alongside Michael Jordan");
+	System.out.println("Name: " + jebronLames.getAnswer());
+	System.out.println("Clue: " + jebronLames.getClue());
+	jebronLames.setAnswer("Jackie Chan");
+	jebronLames.setClue("One of the greatest stuntsmen of all time, acted in movies including Rush Hour, The Legend of Drunken Master, The Karate Kid, and more.");
+	System.out.println("\n");
+  System.out.println("Name: " + jebronLames.getAnswer());
+	System.out.println("Clue: " + jebronLames.getClue());
+	}
 }
