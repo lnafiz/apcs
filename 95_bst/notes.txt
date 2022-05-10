@@ -1,0 +1,19 @@
+Team Mamba: Nafiz Labib, Kartik Vanjani, Prattay Dey
+APCS pd8
+HW95 -- Algorithm as Data Structure
+2022-05-09m
+time spent: 0.6 hrs
+
+DISCO:
+- Insert has two conditions: either root node is null, or isn't null.
+- The transversals have the same code, just rearranged based on the actual algorithms' steps.
+
+QCC:
+- The trees can greatly change depending on order of insertion. What if we have to comb through a bunch of data and make a tree for the set of data? Do we have to worry about it, or can we just implement it based on how we're tasked? 
+
+
+With L = level, d = depth, h = height…
+
+1. a perfect binary tree has (2^L)-1 nodes.
+2. at each level, a perfect binary tree has 2^(L-1) nodes.
+3. height of a complete binary tree w/ n nodes is log base 2 (n+1) - 1.
