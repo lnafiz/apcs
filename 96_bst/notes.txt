@@ -1,0 +1,11 @@
+Team Mamba: Nafiz Labib, Kartik Vanjani, Prattay Dey
+APCS pd8
+HW96 -- BSTs is the Perfect Place for Shade
+2022-05-10t
+time spent: 0.5 hrs
+
+DISCO:
+- The methods added in today's code have either 2 or 3 cases, once we went over them, we were able to write the code out by sectioning the code into those cases.
+- In height, we were about to implement a decently long if-else statement, but then we remembered that the built in Math class's methods contained a comparison method called max that would find out the maximum value between two values, in this case the heights of the left and right subtrees.
+
+QCC:
