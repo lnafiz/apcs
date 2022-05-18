@@ -1,0 +1,17 @@
+// Team Mamba: Nafiz Labib, Kartik Vanjani, Prattay Dey
+// APCS pd8
+// HW101 -- Heap o'Trouble
+// 2022-05-16m
+// time spent: 0.5 hrs
+
+DISCO --
+- Heaps help provide maximum and minumum values of datasets with O(1), something other data structures can't do unless they're specified as ordered in ascending/descending order.
+
+QCC --
+Special Exceptions: What to do when...(addressed in algos)
+Insertion:
+- There's multiple places to insert?
+- The element to be inserted element already exists in the heap?
+Removal:
+- There's multiple elements to be removed?
+- How to traverse heap to find element? When to stop?

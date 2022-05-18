@@ -1,0 +1,15 @@
+Algorithm for Removal (assuming minheap):
+- First check the element wished to be removed with the root node of the heap.
+- If the value of the current node is equal to the element up for removal, then check how many children the node has. If it has one, replace the value of the current node with the child's node. Otherwise, compare the children's values and replace the current node value with the lowest child's value. Then, return confirmation of removal.
+- If not, compare the values of the element and value of the current node.
+- If the element is greater than the current node's value, then first move down the left until you reach a node where the element is less than the current node value.
+- Repeat the process, this time down to the right of that particular node.
+- If you reach the same point where a current node's value is less than the element, then return a null message, the element doesn't exist in this heap.
+
+Algorithm for Removal (assuming minheap):
+- First check the element wished to be removed with the root node of the heap.
+- If the value of the current node is equal to the element up for removal, then check how many children the node has. If it has one, replace the value of the current node with the child's node. Otherwise, compare the children's values and replace the current node value with the lowest child's value. Then, return confirmation of removal.
+- If not, compare the values of the element and value of the current node.
+- If the element is less than the current node's value, then first move down the left until you reach a node where the element is greater than the current node value.
+- Repeat the process, this time down to the right of that particular node.
+- If you reach the same point where a current node's value is greater than the element, then return a null message, the element doesn't exist in this heap.  

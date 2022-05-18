@@ -1,0 +1,9 @@
+Algorithm for Insertion (assuming minheap):
+- First step is to compare the element you want to insert with the root node of the tree.
+- If the current node's value is less than or equal to the element to be inserted, that element should become the root node of the overall (sub)tree (subheap?). Otherwise, move down to the left of the current node.
+- Repeat previous two steps as necessary until the element is inserted. 
+
+Algorithm for Insertion (assuming maxheap):
+- First step is to compare the element you want to insert with the root node of the heap.
+- If the current node's value is greater than or equal to the element to be inserted, that element should become the root node of the overall (sub)tree (subheap?). Otherwise, move down to the left of the current node.
+- Repeat previous two steps as necessary until the element is inserted.
